@@ -1,0 +1,33 @@
+.footer {
+  padding: 7rem 15rem;
+  text-transform: capitalize;
+  background-color: $background-black;
+  .content {
+    display: flex;
+    justify-content: space-around;
+    .column {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      .header-column {
+        font-size: 18px;
+        padding-bottom: 1.7rem;
+        color: $color-white;
+      }
+      a {
+        color: $color-footer-list;
+      }
+    }
+  }
+  .copy-right {
+    border-top: 1px solid $color-border-copy-right;
+    margin: 2rem 6.5rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: $color-footer-list;
+    span {
+      color: $color-white;
+      text-transform: capitalize;
+    }
+  }
+}
