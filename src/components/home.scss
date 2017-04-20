@@ -1,0 +1,129 @@
+@import "variable.scss";
+
+.header {
+  div, li {
+    font-weight: 500;
+  }
+  color: $color-default;
+  border-bottom: 1px solid $color-border;
+  background-color: $background-white;
+  text-transform: uppercase;
+  .content {
+    display: flex;
+    background-color: $background-white;
+    .right-navbar {
+
+    }
+    .left-navbar {
+      flex-grow: 2;
+      .look-out {
+        border-left: 1px solid $color-border;
+        padding-left: 1rem;
+        height: 35px;
+        line-height: 35px;
+        padding-top: 0.1rem;
+        margin-top: 1rem;
+      }
+      .logo {
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+.footer {
+  padding: 7rem 15rem;
+  text-transform: capitalize;
+  background-color: $background-black;
+  .content {
+    display: flex;
+    justify-content: space-around;
+    .column {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      .header-column {
+        font-size: 18px;
+        padding-bottom: 1.7rem;
+        color: $color-white;
+      }
+      a {
+        color: $color-footer-list;
+      }
+    }
+  }
+  .copy-right {
+    border-top: 1px solid $color-border-copy-right;
+    margin: 2rem 6.5rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: $color-footer-list;
+    span {
+      color: $color-white;
+      text-transform: capitalize;
+    }
+  }
+}
+.home {
+  padding: 4rem 10rem;
+  text-align: center;
+  .main-title {
+    font-size: 56px;
+    color: $color-default;
+    font-weight: bold;
+  }
+  .search-engine {
+    margin: 2rem 4rem;
+    .input-url {
+      width: 100%;
+      position: relative;
+      input {
+        width: 100%;
+        height: 33px;
+        padding: 1rem;
+        font-size: 18px;
+        border-radius: 5px;
+        color: $color-search-input;
+        border: 2px solid $color-border-search;
+      }
+      .text {
+        top: 0;
+        right: 0;
+        border: none;
+        position: absolute;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 16px;
+        border-radius: 0px 5px 5px 0px;
+        padding: 0.6rem 2rem;
+        color: $color-white;
+        background-color: $background-black;
+      }
+    }
+  }
+  .learn-more {
+    font-size: 18px;
+    padding-bottom: 2rem;
+    color: $color-learn-more;
+    a {
+      color: $color-default;
+      text-decoration: underline;
+    }
+  }
+  .benefits {
+    display: flex;
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 4rem;
+    .traffic, .user-experience, .time {
+      display: flex;
+      text-align: left;
+      align-items: center;
+      span {
+        padding-left: 1rem;
+      }
+    }
+  }
+  .platforms {
+    font-size: 18px;
+  }
+}
