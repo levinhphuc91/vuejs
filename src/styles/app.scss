@@ -1,0 +1,19 @@
+@import 'variable';
+@import 'helpers';
+@import 'libs';
+@import '../components/components';
+@import 'custom';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-ANR;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.app-container {
+  min-height: calc(100vh - 40rem);
+}

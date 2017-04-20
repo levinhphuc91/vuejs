@@ -1,0 +1,62 @@
+.home {
+  padding: 4rem 10rem;
+  text-align: center;
+  &__main-title {
+    font-size: 56px;
+    color: $color-default;
+    font-weight: bold;
+  }
+  &__search-engine {
+    margin: 2rem 4rem;
+
+    &__form {
+      width: 100%;
+      display: flex;
+      &__input {
+        width: 85%;
+        height: 33px;
+        padding: 1rem;
+        font-size: 18px;
+        border-radius: 5px;
+        color: $color-search-input;
+        border: 2px solid $color-border-search;
+      }
+      &__btn {
+        width: 15%;
+        font-size: 1.6rem;
+        text-transform: uppercase;;
+        border-radius: 0px 5px 5px 0px;
+        padding: 0.6rem 2rem;
+        color: $color-white;
+        background-color: $background-black;
+      }
+    }
+    
+  }
+  .learn-more {
+    font-size: 18px;
+    padding-bottom: 2rem;
+    color: $color-learn-more;
+    a {
+      color: $color-default;
+      text-decoration: underline;
+    }
+  }
+  .benefits {
+    display: flex;
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 4rem;
+    .traffic, .user-experience, .time {
+      display: flex;
+      text-align: left;
+      align-items: center;
+      span {
+        padding-left: 1rem;
+      }
+    }
+  }
+  .platforms {
+    font-size: 18px;
+  }
+}

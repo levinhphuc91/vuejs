@@ -1,0 +1,49 @@
+// .navbar-collapse {
+//   padding-top: 0.5rem;
+//   .nav-item {
+//     text-transform: uppercase;
+//     .nav-link {
+//       color: $color-default;
+//     }
+//   }
+// }
+// .look-out {
+//   border-left: 1px solid $color-border;
+// }
+
+// .app-header {
+//   border-bottom: 1px solid $color-border;
+// }
+
+.header {
+  color: $color-default;
+  border-bottom: 1px solid $color-border;
+  background-color: $background-white;
+  text-transform: uppercase;
+  &__menu {
+    display: flex;
+    background-color: $background-white;
+    
+    .right-navbar {
+      .el-menu-item, .el-submenu__title {
+        font-size: 1.4rem;
+        font-family: $font-ANR;
+      }
+    }
+
+    .left-navbar {
+      flex-grow: 2;
+      .look-out {
+        border-left: 1px solid $color-border;
+        padding-left: 1rem;
+        height: 35px;
+        line-height: 35px;
+        padding-top: 0.1rem;
+        margin-top: 1rem;
+      }
+      .logo {
+        padding-right: 1rem;
+      }
+    }
+  }
+}
