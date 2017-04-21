@@ -1,41 +1,39 @@
 .home {
-  padding: 4rem 10rem;
+  padding: 8rem 12rem 4rem 12rem;
   text-align: center;
   &__main-title {
     font-size: 56px;
     color: $color-default;
-    font-weight: bold;
+    font-weight: bolder;
   }
   &__search-engine {
-    margin: 2rem 4rem;
-
+    margin: 6rem;
     &__form {
       width: 100%;
       display: flex;
       &__input {
-        width: 85%;
-        height: 33px;
         padding: 1rem;
-        font-size: 18px;
-        border-radius: 5px;
+        letter-spacing: 0.5px;
+        border-radius: 5px 0px 0px 5px;
         color: $color-search-input;
         border: 2px solid $color-border-search;
+        border-right: none;
       }
       &__btn {
-        width: 15%;
         font-size: 1.6rem;
         text-transform: uppercase;;
         border-radius: 0px 5px 5px 0px;
-        padding: 0.6rem 2rem;
+        padding: 0rem 4rem;
+        border: none;
         color: $color-white;
         background-color: $background-black;
       }
     }
-    
+
   }
   .learn-more {
     font-size: 18px;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     color: $color-learn-more;
     a {
       color: $color-default;
@@ -43,20 +41,19 @@
     }
   }
   .benefits {
-    display: flex;
     font-size: 18px;
     line-height: 18px;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
     .traffic, .user-experience, .time {
-      display: flex;
       text-align: left;
-      align-items: center;
-      span {
-        padding-left: 1rem;
-      }
+      color: $color-default;
     }
   }
   .platforms {
     font-size: 18px;
+    &__icon-lists {
+      padding-top: 2rem;
+      padding-bottom: 6rem;
+    }
   }
 }

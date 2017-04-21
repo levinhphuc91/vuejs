@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="52px" viewBox="0 0 57 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lookout---homepage-copy" transform="translate(-246.000000, -583.000000)">
+            <g id="benefits-bigger" transform="translate(247.000000, 579.000000)">
+                <g id="bene1">
+                    <g id="icon1">
+                        <polyline id="Path-39" stroke="#343333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0.691647226 6.23871178 0.691647226 54.4634968 54.2074951 54.4634968"></polyline>
+                        <rect id="Rectangle" stroke="#343333" stroke-width="3" x="10.1842105" y="38.527027" width="7.13157895" height="15.972973"></rect>
+                        <rect id="Rectangle-Copy" stroke="#343333" stroke-width="3" x="23.2105263" y="29.7702703" width="7.13157895" height="24.7297297"></rect>
+                        <rect id="Rectangle-Copy-2" stroke="#343333" stroke-width="3" x="36.2368421" y="21.0135135" width="7.13157895" height="33.4864865"></rect>
+                        <g id="Group-5" transform="translate(24.490572, 18.206020) rotate(52.000000) translate(-24.490572, -18.206020) translate(17.990572, -2.293980)" stroke="#DB544D" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6.19215232,40.5559461 L6.19215232,9.65883576" id="Path-40" stroke-width="3"></path>
+                            <polygon id="Triangle-4" fill="#DB544D" points="6.38580146 0.172349278 12.1752751 8.92910604 0.596327771 8.92910604"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
