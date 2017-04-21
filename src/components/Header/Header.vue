@@ -3,7 +3,7 @@
     <div class="container">
       <el-menu mode="horizontal" class="header__menu row">
         <div class="left-navbar col-7 align-items-center row">
-          <el-menu-item class="logo" index="1"><img src="../../assets/logo.png" width="250"/></el-menu-item>
+          <el-menu-item class="logo" index="1"><img src="../../assets/logo-black.png" width="250"/></el-menu-item>
           <el-menu-item class="look-out"index="2">Lookout</el-menu-item>
         </div>
         <div class="right-navbar col-5 align-items-center row">
