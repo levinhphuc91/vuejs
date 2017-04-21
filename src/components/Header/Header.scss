@@ -1,0 +1,24 @@
+.header {
+  color: $color-default;
+  border-bottom: 1px solid $color-border;
+  background-color: $background-white;
+  text-transform: uppercase;
+  &__menu {
+    background-color: $background-white;
+    .left-navbar {
+      .look-out {
+        border-left: 1px solid $color-border;
+        padding-left: 1rem;
+        height: 35px;
+        line-height: 35px;
+        padding-top: 0.5rem;
+      }
+      .logo {
+        padding-right: 1rem;
+      }
+    }
+    li {
+      font-weight: bolder;
+    }
+  }
+}

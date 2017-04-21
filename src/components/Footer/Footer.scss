@@ -1,0 +1,37 @@
+.footer {
+  padding: 7rem 0rem;
+  text-transform: capitalize;
+  background-color: $background-black;
+  &__content {
+    display: flex;
+    .row {
+      flex-direction: column;
+      .header-column {
+        color: $color-white;
+        padding-bottom: 1.7rem;
+      }
+      a {
+        padding-bottom: 0.5rem;
+        color: $color-footer-list;
+      }
+    }
+    &__ship-by {
+      padding-top: 6rem;
+      color: $color-footer-list;
+      span {
+        color: $color-white;
+        text-transform: capitalize;
+      }
+    }
+    &__social-network {
+      padding-top: 1rem;
+    }
+    &__copy-right {
+      color: $color-footer-list;
+      text-align: center;
+      padding-top: 3rem;
+      border-top: 1px solid;
+      margin: 4rem 25rem 0rem 25rem;
+    }
+  }
+}
