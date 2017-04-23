@@ -1,10 +1,7 @@
 <template>
   <div class="home container">
     <h1 class="home__main-title">Test and Optimize Your Links Across Your Favorite Social and Messaging Platforms</h1>
-    <div class="home__search-engine row">
-      <input class="home__search-engine__input col-9 col-md-10" placeholder="Your link here">
-      <button class="home__search-engine__btn col-3 col-md-2" v-on:click="onSearch">Test</button>
-    </div>
+    <search-comp />
     <div class="home__learn-more">
       Learn how to optimize links across web, mobile, and messaging platforms. <a href="#">Read now.</a>
     </div>
@@ -42,12 +39,12 @@
 </template>
 
 <script>
+import Search from '../Search/Search';
+
 export default {
   name: 'home',
-  methods: {
-    onSearch() {
-      this.$router.push('lookout');
-    },
+  components: {
+    'search-comp': Search,
   },
 };
 </script>
