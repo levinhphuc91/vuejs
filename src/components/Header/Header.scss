@@ -1,48 +1,47 @@
-// .navbar-collapse {
-//   padding-top: 0.5rem;
-//   .nav-item {
-//     text-transform: uppercase;
-//     .nav-link {
-//       color: $color-default;
-//     }
-//   }
-// }
-// .look-out {
-//   border-left: 1px solid $color-border;
-// }
-
-// .app-header {
-//   border-bottom: 1px solid $color-border;
-// }
-
 .header {
+  font-family: $font-ANM;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: $color-default;
   border-bottom: 1px solid $color-border;
   background-color: $background-white;
   text-transform: uppercase;
   &__menu {
-    display: flex;
     background-color: $background-white;
-    
-    .right-navbar {
-      .el-menu-item, .el-submenu__title {
-        font-size: 1.4rem;
-        font-family: $font-ANR;
-      }
+    .look-out {
+      font-family: $font-VYGM;
+      border-left: 1px solid $color-border;
+      padding-left: 1rem;
+      color: $color-lookout;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      font-size: 18px;
+      text-transform: capitalize;
+      padding-top: 0.8rem;
     }
+    .logo {
+      padding-right: 1rem;
+    }
+    li {
+      font-weight: bolder;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
 
-    .left-navbar {
-      flex-grow: 2;
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  .header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &__menu {
       .look-out {
-        border-left: 1px solid $color-border;
-        padding-left: 1rem;
-        height: 35px;
-        line-height: 35px;
-        padding-top: 0.1rem;
-        margin-top: 1rem;
-      }
-      .logo {
-        padding-right: 1rem;
+        font-size: 14px;
+        padding-top: 0.3rem;
       }
     }
   }

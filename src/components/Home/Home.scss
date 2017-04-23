@@ -1,62 +1,90 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 .home {
-  padding: 4rem 10rem;
+  padding: 8rem 12rem 4rem 12rem;
   text-align: center;
   &__main-title {
     font-size: 56px;
+    font-family: $font-ANB;
     color: $color-default;
     font-weight: bold;
   }
   &__search-engine {
-    margin: 2rem 4rem;
-
-    &__form {
-      width: 100%;
-      display: flex;
-      &__input {
-        width: 85%;
-        height: 33px;
-        padding: 1rem;
-        font-size: 18px;
-        border-radius: 5px;
-        color: $color-search-input;
-        border: 2px solid $color-border-search;
-      }
-      &__btn {
-        width: 15%;
-        font-size: 1.6rem;
-        text-transform: uppercase;;
-        border-radius: 0px 5px 5px 0px;
-        padding: 0.6rem 2rem;
-        color: $color-white;
-        background-color: $background-black;
-      }
+    margin: 6rem;
+    &__input {
+      padding: 1rem 1rem 1rem 2rem;
+      letter-spacing: 0.5px;
+      border-radius: 5px 0px 0px 5px;
+      color: $color-search-input;
+      border: 2px solid $color-border-search;
+      border-right: none;
+      font-family: $font-ANM;
+      font-size: 18px;
+      font-weight: 500;
     }
-    
+    &__btn {
+      font-size: 16px;
+      text-transform: uppercase;;
+      border-radius: 0px 5px 5px 0px;
+      padding: 0rem 4rem;
+      border: none;
+      letter-spacing: 2.1px;
+      color: $color-white;
+      font-family: $font-ANB;
+      background-color: $background-black;
+    }
   }
-  .learn-more {
+  &__learn-more {
     font-size: 18px;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     color: $color-learn-more;
     a {
       color: $color-default;
       text-decoration: underline;
     }
   }
-  .benefits {
-    display: flex;
+  &__benefits {
     font-size: 18px;
     line-height: 18px;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     .traffic, .user-experience, .time {
-      display: flex;
+      line-height: 25px;
       text-align: left;
-      align-items: center;
-      span {
-        padding-left: 1rem;
+      padding-bottom: 2rem;
+      color: $color-default;
+    }
+  }
+  &__platforms {
+    font-size: 18px;
+    &__icon-lists {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      img {
+        margin-bottom: 2rem;
       }
     }
   }
-  .platforms {
-    font-size: 18px;
+
+  @include media-breakpoint-down(md) {
+    padding: 8rem 1.5rem 4rem 1.5rem;
+    &__learn-more, &__platforms {
+      font-size: 16px;
+    }
+    &__benefits {
+      font-size: 16px;
+      .traffic, .user-experience, .time {
+        padding-left: 4rem;
+      }
+    }
+    &__search-engine {
+      margin: 6rem 0rem;
+      &__btn {
+        padding: 0rem 1rem;
+      }
+    }
+    &__main-title {
+      font-size: 30px;
+      line-height: 1.5;
+    }
   }
 }
