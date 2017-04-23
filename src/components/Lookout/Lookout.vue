@@ -1,11 +1,16 @@
 <template>
   <div class="lookout container">
-    test
+    <search-comp />
   </div>
 </template>
 
 <script>
+import Search from '../Search/Search';
+
 export default {
   name: 'lookout',
+  components: {
+    'search-comp': Search,
+  },
 };
 </script>
