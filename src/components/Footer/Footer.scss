@@ -1,3 +1,5 @@
+@import '~bootstrap/scss/bootstrap-grid.scss';
+
 .footer {
   padding: 7rem 0rem;
   text-transform: capitalize;
@@ -10,7 +12,7 @@
         color: $color-white;
         padding-bottom: 1.7rem;
       }
-      a {
+      p {
         padding-bottom: 0.5rem;
         color: $color-footer-list;
       }
@@ -24,14 +26,27 @@
       }
     }
     &__social-network {
-      padding-top: 1rem;
+      padding-top: 2rem;
+      img {
+        margin-right: 2rem;
+      }
     }
     &__copy-right {
       color: $color-footer-list;
       text-align: center;
       padding-top: 3rem;
-      border-top: 1px solid;
-      margin: 4rem 25rem 0rem 25rem;
+      border-top: 1px solid $color-border-copy-right;
+    }
+    .row.col-6.col-md-2 {
+      padding-bottom: 2rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__content {
+      &__copy-right {
+        font-size: 12px;
+      }
     }
   }
 }
