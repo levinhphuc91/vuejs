@@ -4,8 +4,8 @@
       <signal-comp />
       <div class="result-facebook__header-search row no-gutters align-items-center">
           <input class="col-11" type="text" placeholder="Search" />
-          <img class="profile-menu col-1" src="../../../assets/facebook/user.svg" height="15">
-          <img class="icon" src="../../../assets/facebook/search.svg" height="10">
+          <img class="profile-menu col-1" src="~@Assets/facebook/user.svg" height="15">
+          <img class="icon" src="~@Assets/facebook/search.svg" height="10">
       </div>
     </div>
     <div class="result-facebook__create-post">
@@ -24,11 +24,11 @@
 
     <div class="result-facebook__tabs">
       <div class="justify-content-center row">
-        <img class="col-2" src="../../../assets/facebook/feed.svg"/>
-        <img class="col-2" src="../../../assets/facebook/friend.svg"/>
-        <img class="col-2" src="../../../assets/facebook/fb-messenger.svg"/>
-        <img class="col-2" src="../../../assets/facebook/globe-icon.svg"/>
-        <img class="col-2" src="../../../assets/facebook/menu-icon.svg"/>
+        <img class="col-2" src="~@Assets/facebook/feed.svg"/>
+        <img class="col-2" src="~@Assets/facebook/friend.svg"/>
+        <img class="col-2" src="~@Assets/facebook/fb-messenger.svg"/>
+        <img class="col-2" src="~@Assets/facebook/globe-icon.svg"/>
+        <img class="col-2" src="~@Assets/facebook/menu-icon.svg"/>
       </div>
     </div>
   </div>
