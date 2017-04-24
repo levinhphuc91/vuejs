@@ -1,0 +1,30 @@
+.result {
+  &__header {
+    padding-bottom: 1.5rem;
+    button {
+      border: none;
+      font-size: 11px;
+      border-radius: 3px;
+      color: $color-white;
+      padding: 0.5rem 0rem;
+      background-color: $background-refresh;
+    }
+    span {
+      font-size: 20px;
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+    img {
+      padding: 0rem;
+    }
+  }
+  &__content {
+    height: 50rem;
+    padding: 1rem;
+    box-shadow: $lookout-shadow-result;
+    background-color: $background-white;
+    &-border {
+      border: solid 1px $color-border-search;
+    }
+  }
+}

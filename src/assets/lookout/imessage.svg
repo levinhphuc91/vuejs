@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>i9 imessage copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A6ED77" offset="0%"></stop>
+            <stop stop-color="#00C343" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lookout---result" transform="translate(-797.000000, -2747.000000)">
+            <g id="10" transform="translate(796.000000, 2744.000000)">
+                <g id="i9-imessage-copy" transform="translate(1.000000, 3.000000)">
+                    <rect id="Rectangle-39" fill="url(#linearGradient-1)" x="0.318769225" y="0" width="20.094001" height="19.700001" rx="4"></rect>
+                    <path d="M10.3657697,2.94117647 C5.96920781,2.94117647 2.40498332,5.78548296 2.40498332,9.29445239 C2.40498332,11.5928286 3.93460519,13.6062464 6.22536809,14.7216137 C6.1786378,16.1970167 5.09185271,16.7117647 5.09185271,16.7117647 C5.09185271,16.7117647 7.7163335,16.5640085 7.71535485,15.4109826 C7.71535485,15.3709253 7.70312179,15.3258309 7.68232559,15.2773784 C8.52102421,15.5167626 9.42406874,15.6477283 10.3657697,15.6477283 C14.7625763,15.6477283 18.3265561,12.803182 18.3265561,9.29445239 C18.3265561,5.78548296 14.7625763,2.94117647 10.3657697,2.94117647" id="Fill-145" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

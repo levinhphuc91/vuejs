@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import Search from '../Search/Search';
+import { Search } from '../Common';
 
 export default {
   name: 'home',

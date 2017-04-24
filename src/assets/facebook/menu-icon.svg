@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="12px" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>menu icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lookout---result" transform="translate(-597.000000, -717.000000)">
+            <g id="1" transform="translate(330.000000, 164.000000)">
+                <g id="facebook" transform="translate(9.436747, 50.449111)">
+                    <g transform="translate(-2.051205, -1.899838)" id="Tap-bar">
+                        <g transform="translate(0.000000, 495.000000)">
+                            <image id="menu-icon" x="259.614458" y="9.45072698" width="14.2105263" height="11.6883117" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyCAYAAAAA9rgCAAAABGdBTUEAA1teXP8meAAAANVJREFUaAXtmUEOgkAMRTuNkROYGFyo97+TQiLGxBPgwpHuXLCji2b6/hLCpP/9YUg+5VtrHcZJnq+3zPNHWlTX7aU/HuRyPkm5DY96Xwxn0HUxrJZsFplXbXUbr4VoXnXtRsvX1F7oLDKvaqdXFpnXnR3VpiyfpSzh4hMCEIAABCAAAQhAAAIQ2EigUOJtJBj5cUq8yOl4zEaJ50Ex8hqUeK2W8v//liLvQGaDAAQgAAEIQAACEIAABAIRoMQLFIb7KJR47kiDLUiJFywQ93Eo8TKUeD//LnMhxPKoCAAAAABJRU5ErkJggg=="></image>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

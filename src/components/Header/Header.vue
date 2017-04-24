@@ -2,7 +2,9 @@
   <div class="header">
     <div class="container">
       <el-menu mode="horizontal" class="header__menu row align-items-center">
-        <div class="logo col-6 col-md-3" index="1"><img src="../../assets/logo-black.png"/></div>
+        <div class="logo col-6 col-md-3" index="1">
+          <router-link to="/"><img src="../../assets/logo-black.png"/></router-link>
+        </div>
         <div class="look-out col-4"index="2">Lookout</div>
         <div class="hidden-md-up menu-hambuger col-2"><img src="../../assets/menu.png"></div>
         <el-submenu class="hidden-sm-down" index="3">

@@ -1,3 +1,8 @@
 .lookout {
-  padding: 10px;
+  background-color: $background-lookout;
+  &__result {
+    &__screen {
+      padding: 4rem 0rem;
+    }
+  }
 }
