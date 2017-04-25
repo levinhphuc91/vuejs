@@ -1,6 +1,11 @@
 $background-black: #252936;
 $background-white: #ffffff;
+$background-mc: #e3d9d8;
+$background-refresh: #d4d8da;
+$background-lookout: #f6f7f8;
+$background-button: #252936;
 $color-default: #343333;
+$color-more: #dc534d;
 $color-search-input: #1f1e1e;
 $color-learn-more: #a2a2a2;
 $color-border: #eeeaea;
@@ -9,11 +14,13 @@ $color-lookout: #767271;
 $color-footer-list: #6d758c;
 $color-white: #ffffff;
 $color-border-copy-right: #393e4e;
+$lookout-shadow-result: 0 9px 10px 0 rgba(226, 226, 226, 0.5);
 
 $assets-path: './assets';
 $font-ANR: 'AvenirNextRegular';
 $font-ANM: 'AvenirNextMediumCn';
-$font-AND: 'AvenirNextDemiCn';
+$font-AND: 'AvenirNextDemi';
+$font-AND-CN: 'AvenirNextDemiCn';
 $font-ANH: 'AvenirNextHeavyCn';
 $font-ANB: 'AvenirNextBold';
 $font-ANB-CN: 'AvenirNextBoldCn';

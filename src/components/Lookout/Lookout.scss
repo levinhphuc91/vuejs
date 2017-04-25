@@ -1,3 +1,70 @@
-.lookout {
-  padding: 10px;
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.home {
+  padding: 8rem 12rem 4rem 12rem;
+  text-align: center;
+  &__main-title {
+    font-size: 56px;
+    font-family: $font-ANB;
+    color: $color-default;
+    font-weight: bold;
+  }
+  &__learn-more {
+    font-size: 18px;
+    padding-bottom: 4rem;
+    color: $color-learn-more;
+    a {
+      color: $color-default;
+      text-decoration: underline;
+    }
+  }
+  &__benefits {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 6rem;
+    .traffic, .user-experience, .time {
+      line-height: 25px;
+      text-align: left;
+      padding-bottom: 2rem;
+      color: $color-default;
+      span {
+        padding-left: 0rem;
+      }
+    }
+    .time {
+      span {
+        padding-right: 0rem;
+      }
+    }
+  }
+  &__platforms {
+    font-size: 18px;
+    &__icon-lists {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 8rem 1.5rem 4rem 1.5rem;
+    &__learn-more, &__platforms {
+      font-size: 16px;
+    }
+    &__benefits {
+      font-size: 16px;
+      .traffic, .user-experience, .time {
+        padding-left: 4rem;
+        span {
+          padding-left: 1.5rem;
+        }
+      }
+    }
+    &__main-title {
+      font-size: 30px;
+      line-height: 1.5;
+    }
+  }
 }

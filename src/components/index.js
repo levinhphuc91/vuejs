@@ -1,5 +1,5 @@
 export { default as Header } from './Header/Header';
 export { default as Footer } from './Footer/Footer';
-export { default as Home } from './Home/Home';
 export { default as Lookout } from './Lookout/Lookout';
-export * from './Result';
+export { default as LookoutResult } from './LookoutResult/LookoutResult';
+export { default as Mc } from './Mc/Mc';

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>i11 telegram copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#37AEE2" offset="0%"></stop>
+            <stop stop-color="#1E96C8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lookout---result" transform="translate(-797.000000, -3392.000000)">
+            <g id="12" transform="translate(796.000000, 3389.000000)">
+                <g id="i11-telegram-copy" transform="translate(1.000000, 3.000000)">
+                    <circle id="Oval-12" fill="url(#linearGradient-1)" cx="10" cy="10" r="10"></circle>
+                    <path d="M13.9299715,5.32861918 L4.34039024,9.06562983 C4.02973313,9.18669878 4.04861328,9.63242762 4.36835646,9.72674969 L6.80523291,10.44628 L7.71466605,13.3320713 C7.80961746,13.6335243 8.19158646,13.7248177 8.41268086,13.499082 L9.67257674,12.2125965 L12.1446175,14.0271754 C12.4471325,14.2492138 12.8779539,14.0841699 12.9547725,13.716951 L14.5920353,5.88928091 C14.6722366,5.5057779 14.295027,5.1863494 13.9299715,5.32861918 Z M12.7276994,7.06575014 L8.2734791,11.0047784 C8.22907142,11.0439547 8.20079053,11.0983531 8.19418248,11.1571962 L8.02272713,12.6816895 C8.01702375,12.7314859 7.94744254,12.738094 7.93269242,12.6903036 L7.22696822,10.4166224 C7.19471463,10.3126243 7.23680163,10.1998154 7.32947169,10.1423883 L12.5895596,6.87997735 C12.7104712,6.80500743 12.8343329,6.97138874 12.7276994,7.06575014 Z" id="Fill-2" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
