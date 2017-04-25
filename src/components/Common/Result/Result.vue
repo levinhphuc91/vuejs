@@ -4,7 +4,7 @@
       <!-- <img class="col-1 logo" src="~@Assets/lookout/facebook.svg"/> -->
       <img class="col-1 logo" :src="imgUrl(platform)"/>
       <span class="col-7">{{platform}}</span>
-      <button class="col-4"><img src="~@Assets/facebook/photo.svg">Refresh</button>
+      <button class="col-4"><img src="~@Assets/facebook/refresh.svg">Refresh</button>
     </div>
     <div class="result__content row">
       <div class="result__content-border">
