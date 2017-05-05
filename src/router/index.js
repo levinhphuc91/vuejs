@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import { Lookout, LookoutResult, Mc } from '@Component';
+import { Lookout, LookoutResult, Mc, Intel } from '@Component';
 
 Vue.use(Router);
 
@@ -9,6 +9,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'intel',
+      component: Intel,
+    },
+    {
+      path: '/mc',
       name: 'mc',
       component: Mc,
     },
