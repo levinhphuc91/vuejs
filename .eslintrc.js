@@ -30,6 +30,7 @@ module.exports = {
       'vue': 'never'
     }],
     "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["error", "unix"],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
