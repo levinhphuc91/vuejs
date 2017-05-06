@@ -32,7 +32,7 @@
             Get monthly marketing magazine on your email inbox or slack team as a PDF. Intel is the only monthly briefing you’ll need to conquer your competition in a marketing world.
           </div>
           <div class="more">
-            See Intelligence
+            <router-link to="/intel">See Intelligence</router-link>
             <img src="~@Assets/mc/arrow.svg"/>
           </div>
         </div>
@@ -50,7 +50,7 @@
             Test and preview your links to drive more traffic, trust, and conversions to your website, product pages, and landing pages. Lookout maximizes your website visibility across social and messaging platforms.
           </div>
           <div class="more">
-            <router-link to="/">See Lookout</router-link>
+            <router-link to="/lookout">See Lookout</router-link>
             <img src="~@Assets/mc/arrow.svg"/>
           </div>
         </div>
