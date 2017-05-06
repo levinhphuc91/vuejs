@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="188" height="243" viewBox="0 0 188 243">
+    <defs>
+        <filter id="a" width="108.3%" height="106.4%" x="-5.8%" y="-1.9%" filterUnits="objectBoundingBox">
+            <feOffset dx="-3" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.258520154 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(7 1)">
+        <rect width="180" height="235" fill="#BDBABA" rx="1"/>
+        <text fill="#1B1006" font-family="Voyager-Medium, Voyager" font-size="16" font-weight="400" letter-spacing="5.493">
+            <tspan x="57.343" y="52">INTEL</tspan>
+        </text>
+        <text fill="#343333" font-family="AvenirNext-Medium, Avenir Next" font-size="4" font-weight="400">
+            <tspan x="48.012" y="25">Classified Mobile Briefing #3 - JANUARY 2017</tspan>
+        </text>
+        <path fill="#8F8B8B" d="M17 177h132v10H17zM17 196h77v10H17z"/>
+    </g>
+</svg>
