@@ -22,6 +22,9 @@
     .logo {
       padding-right: 1rem;
     }
+    .contact-us {
+      padding-right: 0rem;
+    }
     li {
       font-weight: bolder;
     }
@@ -29,6 +32,12 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+    .el-submenu__title, .el-menu-item {
+      font-weight: 500 !important;
+      &:hover {
+        background-color: transparent !important;
+      }
     }
   }
 }

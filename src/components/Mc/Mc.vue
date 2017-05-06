@@ -1,11 +1,11 @@
 <template>
   <div class="mc">
     <section class="mc__container-header">
-      <div class="row title justify-content-center">
+      <div class="row title justify-content-center col no-gutters">
         Stop Being A Dumb Ass Marketer
       </div>
-      <div class="sub-title row justify-content-center">
-        Bloody Brilliant <span>Tools</span> & <span>Strategies</span> for Marketing Professionals
+      <div class="sub-title row justify-content-center col no-gutters">
+        Bloody Brilliant <span class="hidden-md-up">Mobiles</span><span>Tools</span> & <span>Strategies</span> for Marketing Professionals
       </div>
       <div class="row justify-content-center">
         <button>
@@ -13,37 +13,36 @@
         </button>
       </div>
       <div class="row justify-content-center">
-        <img class="splatter" src="~@Assets/mc/splatter@2x.png" height="440"/>
-        <img class="characters" src="~@Assets/mc/characters@2x.png" height="530"/>
+        <img class="characters" src="~@Assets/mc/characters@2x.png"/>
       </div>
     </section>
-    <section class="mc__container-intel">
+    <section class="mc__container-intel col no-gutters">
       <div class="row mc__container-intel__title justify-content-center">
         Win Tomorrow’s Battlefield by Mastering Mobile Now
       </div>
       <div class="row mc__container-intel__content align-items-center">
-        <div class="col col-md-6">
+        <div class="col-12 col-md-6">
           <img class="illust" src="~@Assets/mc/intel-illust.jpg"/>
         </div>
-        <div class="col col-md-4">
+        <div class="col-12 col-md-5 left-side">
           <div class="title">
-            Intel
+            Intelligence
           </div>
           <div class="description">
             Get monthly marketing magazine on your email inbox or slack team as a PDF. Intel is the only monthly briefing you’ll need to conquer your competition in a marketing world.
           </div>
           <div class="more">
-            See INTEL
+            See Intelligence
             <img src="~@Assets/mc/arrow.svg"/>
           </div>
         </div>
       </div>
     </section>
-    <section class="mc__container-lookout">
+    <section class="mc__container-lookout col no-gutters">
       <div class="row mc__container-intel__content align-items-center">
-        <div class="col col-md-2">
+        <div class="col-12 col-md-1">
         </div>
-        <div class="col col-md-4">
+        <div class="right-side col-12 col-md-5">
           <div class="title">
             Lookout
           </div>
