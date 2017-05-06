@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import { Lookout, LookoutResult, Mc, Intel } from '@Component';
+import { Lookout, LookoutResult, Mc, Intel, Term } from '@Component';
 
 Vue.use(Router);
 
@@ -16,6 +16,11 @@ export default new Router({
       path: '/intel',
       name: 'intel',
       component: Intel,
+    },
+    {
+      path: '/term',
+      name: 'term',
+      component: Term,
     },
     {
       path: '/lookout',

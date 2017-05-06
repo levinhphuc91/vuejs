@@ -1,0 +1,81 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+
+font-size-term {
+  font-size: 18px;
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
+}
+.term {
+  padding: 5rem 27rem;
+  p {
+    @extend font-size-term;
+    padding-bottom: 1.5rem;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $background-black;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  &__title {
+    padding-bottom: 5rem;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.47;
+    font-family: $font-AND;
+    color: $color-search-input;
+  }
+  &__content {
+    &__sub-title {
+      font-size: 24px;
+      font-weight: 600;
+      font-family: $font-AND;
+      padding-bottom: 0.5rem;
+    }
+    &__list {
+      margin-top: -1rem;
+      .dot {
+        margin: 0.7rem 2rem;
+      }
+      .number {
+        @extend font-size-term;
+        margin: 0rem 2rem;
+      }
+      p {
+        padding-bottom: 1rem;
+      }
+    }
+    &__quotes {
+      @extend font-size-term;
+      font-style: italic;
+      span {
+        font-style: normal;
+      }
+    }
+    &__caption {
+      font-size: 14px;
+      text-align: center;
+      color: $color-caption;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 3rem 1rem;
+    &__title {
+      font-size: 28px;
+      padding-bottom: 3rem;
+    }
+    &__content {
+      &__sub-title {
+        font-size: 20px;
+      }
+    }
+  }
+}
