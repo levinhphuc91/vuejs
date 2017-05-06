@@ -1,10 +1,17 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 .mc {
   &__container-header {
+    background: url($assets-path + '/mc/header-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 4rem;
+    background-size: cover;
     background-color: $background-mc;
     .title {
       font-size: 56px;
       font-weight: bold;
+      text-align: center;
       font-family: $font-ANB;
     }
     .sub-title {
@@ -15,16 +22,18 @@
         font-family: $font-AND;
       }
     }
+
     .characters {
-      margin-top: -2rem;
-      position: absolute;
+      margin-bottom: -6rem;
+      height: 530px;
     }
   }
   &__container-intel, &__container-lookout {
     &__title {
+      text-align: center;
       font-size: 40px;
       font-weight: 600;
-      padding: 8rem 0rem;
+      padding: 10rem 0rem 8rem;
       font-family: $font-ANB;
     }
     &__content {
@@ -58,11 +67,18 @@
   }
   &__container-intel {
     padding-bottom: 7.5rem;
+    .left-side {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
   }
   &__container-lookout {
     padding-top: 7.5rem;
     padding-bottom: 15rem;
     border-top: 1px solid $color-border-search;
+    .right-side {
+      padding-right: 6rem;
+    }
   }
   &__container-join-us {
     padding: 10rem 0rem;
@@ -91,5 +107,38 @@
     padding: 1.5rem 5rem;
     border: none;
     color: $color-white;
+  }
+
+  @include media-breakpoint-down(md) {
+      &__container-header {
+        .title {
+          font-size: 40px;
+          line-height: 1.13;
+          padding: 0rem 7rem 2rem 7rem;
+        }
+        .sub-title {
+          font-size: 20px;
+          line-height: 1.25;
+          padding-left: 0rem;
+          padding-right: 0rem;
+          .hidden-md-up {
+            padding-right: 0rem;
+          }
+        }
+        .characters {
+          height: 270px;
+          margin-bottom: -4rem;
+        }
+    }
+    &__container-intel, &__container-lookout {
+      &__title {
+        font-size: 30px;
+        line-height: 1.17;
+        padding-top: 3rem;
+      }
+    }
+    button {
+      padding: 1.5rem 9rem;
+    }
   }
 }
