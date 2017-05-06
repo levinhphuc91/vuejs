@@ -50,56 +50,82 @@
           </div>
         </div>
       </div>
-      <div class="row mc__container-intel__content align-items-center">
-        <div class="col col-md-6">
+      <div class="row intel__container-intel__marketing align-items-center">
+        <div class="col-12 col-md-6">
           <img class="illust" src="~@Assets/mc/intel-illust.jpg"/>
         </div>
-        <div class="col col-md-4">
+        <div class="col-12 col-md-4">
           <div class="title">
-            Intel
+            Marketing warfare, made easy
           </div>
           <div class="description">
-            Get monthly marketing magazine on your email inbox or slack team as a PDF. Intel is the only monthly briefing you’ll need to conquer your competition in a marketing world.
+            Stop wasting time testing things out on mobile and instead start winning time after time after time. Thanks to bloody brilliant mobile marketing strategies straight from the war rooms of today’s most successful handheld entrepreneurs, your team can stay ahead of the trends, start implementing effective strategies to your team and existing product. Plus, skip the blogger bullshit that wastes your time.
           </div>
-          <div class="more">
-            See INTEL
-            <img src="~@Assets/mc/arrow.svg"/>
-          </div>
+        </div>
+        <div class="col-12 text-center leaked">
+          <p class="title">Leaked: Upcoming Interviews and Espionage Missions</p>
+        </div>
+        <div class="col-12 logo">
+          <img src="~@Assets/intel/facebook-logo.png" class="facebook-logo"/>
+          <img src="~@Assets/intel/wechat-3.png" class="wechat-3"/>
+          <img src="~@Assets/intel/1280-px-sound-cloud-logo.png" class="soundCloud_logo"/>
+          <img src="~@Assets/intel/hootsuite-logo.png" class="hootsuite_logo"/>
+          <img src="~@Assets/intel/unbounce-primary-logo-light-background.png" class="unbounce-logo" />
         </div>
       </div>
     </section>
-    <section class="mc__container-lookout">
-      <div class="row mc__container-intel__content align-items-center">
-        <div class="col col-md-2">
+    <section class="intel__container-report">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <p class="title text-center">The Latest Monthly Intel Reports</p>
         </div>
-        <div class="col col-md-4">
-          <div class="title">
-            Lookout
-          </div>
-          <div class="description">
-            Test and preview your links to drive more traffic, trust, and conversions to your website, product pages, and landing pages. Lookout maximizes your website visibility across social and messaging platforms.
-          </div>
-          <div class="more">
-            <router-link to="/">See Lookout</router-link>
-            <img src="~@Assets/mc/arrow.svg"/>
+      </div>
+      <div class="row banner align-items-center">
+        <div class="col-sm-4">
+          <div class="banner-item">
+            <div class="figure">
+              <img src="~@Assets/intel/magz.png" />
+            </div>
+            <div class="content">
+              <h3>The Rise Of China</h3>
+              <p class="date text-uppercase">Janunary  2017 - Classified Briefing</p>
+              <p class="desc">China Country Feature: Top 10 Mobile Apps With Marketing Audits  + Actionable Twitter  Strategy for Positive Re-Activation</p>
+            </div>
           </div>
         </div>
-        <div class="col col-md-6">
-          <img class="illust" src="~@Assets/mc/lookout-illust.jpg"/>
+        <div class="col-sm-4">
+          <div class="banner-item">
+            <div class="figure">
+              <img class="opacity" src="~@Assets/intel/magz.svg" />
+            </div>
+            <div class="content">
+              <h3>The Rise Of China</h3>
+              <p class="date text-uppercase">Janunary  2017 - Classified Briefing</p>
+              <p class="desc">China Country Feature: Top 10 Mobile Apps With Marketing Audits  + Actionable Twitter  Strategy for Positive Re-Activation</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="banner-item">
+            <div class="figure">
+              <img class="opacity" src="~@Assets/intel/magz.svg" />
+            </div>
+            <div class="content">
+              <h3>The Rise Of China</h3>
+              <p class="date text-uppercase">Janunary  2017 - Classified Briefing</p>
+              <p class="desc">China Country Feature: Top 10 Mobile Apps With Marketing Audits  + Actionable Twitter  Strategy for Positive Re-Activation</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="mc__container-join-us">
-      <div class="row waiting justify-content-center">
-        What are you waiting for?
-      </div>
-      <div class="row victory justify-content-center">
-        Lead Your Marketing Team To Victory
-      </div>
-      <div class="row justify-content-center">
-        <button>
-          Join us
-        </button>
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+          <p class="line-1 waiting">Let’s Go!</p>
+          <p class="line-2 victory">Challenge the field. Change the industry. Join us today</p>
+          <p> <button> read now</button></p>
+        </div>
       </div>
     </section>
   </div>
