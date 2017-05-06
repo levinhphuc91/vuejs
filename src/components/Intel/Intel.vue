@@ -13,18 +13,39 @@
       <div class="row intel__container-intel__title justify-content-center">
         <div class="col-12 content">
           <p class="title text-center">Handheld Heroics for Mobile Strategists</p>
-          <div class="row item">
+          <div class="row item align-items-center">
             <div class="col-sm-4">
-              <p class="item-name">Case Studies</p>
-              <p class="item-desc">Bloody brilliant strategies from the best in the field.</p>
+              <div class="row align-items-start">
+                <div class="col-3 col-md-12">
+                  <p class="icon"><img src="~@Assets/intel/icon-1.svg" /></p>
+                </div>
+                <div class="col-9 col-md-12">
+                  <p class="item-name">Case Studies</p>
+                  <p class="item-desc">Bloody brilliant strategies from the best in the field.</p>
+                </div>
+              </div>
             </div>
             <div class="col-sm-4">
-              <p class="item-name">Interviews</p>
-              <p class="item-desc">Espionage from the frontlines: What’s working? What isn’t?</p>
+              <div class="row align-items-start">
+                <div class="col-3 col-md-12">
+                  <p class="icon"><img src="~@Assets/intel/icon-2.svg" /></p>
+                </div>
+                <div class="col-9 col-md-12">
+                  <p class="item-name">Interviews</p>
+                  <p class="item-desc">Espionage from the frontlines: What’s working? What isn’t?</p>
+                </div>
+              </div>
             </div>
             <div class="col-sm-4">
-              <p class="item-name">News</p>
-              <p class="item-desc">Top secret plans: Learn about the latest technology & software</p>
+              <div class="row align-items-start">
+                <div class="col-3 col-md-12">
+                  <p class="icon"><img src="~@Assets/intel/newspaper.svg" /></p>
+                </div>
+                <div class="col-9 col-md-12">
+                  <p class="item-name">News</p>
+                  <p class="item-desc">Top secret plans: Learn about the latest technology & software</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
