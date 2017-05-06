@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="42" viewBox="0 0 48 42">
+    <defs>
+        <rect id="a" width="36.966" height="41.153" rx="3"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect width="34.966" height="39.153" x="1" y="1" stroke="#343333" stroke-width="2" rx="3"/>
+        </g>
+        <path stroke="#343333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.161 9.877h23.837M6.161 16.461h23.837M6.161 23.046h23.837M6.161 29.63h12.76"/>
+        <g stroke="#DC534D" transform="rotate(-25 45.049 -44.98)">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M10.29 19.52v10.51"/>
+            <ellipse cx="10.079" cy="9.97" fill="#FFF" stroke-width="3" rx="9.911" ry="9.963"/>
+        </g>
+    </g>
+</svg>
