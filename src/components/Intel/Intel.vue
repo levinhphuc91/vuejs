@@ -115,7 +115,7 @@ export default {
   },
   methods: {
     changeBGHeader() {
-      HEADER_EV.emit(MC_PAGE, true);
+      HEADER_EV.emit(MC_PAGE, false);
     },
   },
 };

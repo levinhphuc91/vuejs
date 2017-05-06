@@ -40,11 +40,20 @@
 
 <script>
 import { Search } from '../Common';
+import { HEADER_EV, MC_PAGE } from '../../events/HeaderEvent';
 
 export default {
   name: 'lookout',
   components: {
     'search-comp': Search,
+  },
+  mounted() {
+    this.changeBGHeader();
+  },
+  methods: {
+    changeBGHeader() {
+      HEADER_EV.emit(MC_PAGE, false);
+    },
   },
 };
 </script>

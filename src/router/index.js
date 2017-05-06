@@ -9,13 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'intel',
-      component: Intel,
-    },
-    {
-      path: '/mc',
       name: 'mc',
       component: Mc,
+    },
+    {
+      path: '/intel',
+      name: 'intel',
+      component: Intel,
     },
     {
       path: '/lookout',
