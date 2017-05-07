@@ -21,7 +21,7 @@
         Win Tomorrow’s Battlefield by Mastering Mobile Now
       </div>
       <div class="row mc__container-intel__content align-items-center">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 right-side">
           <img class="illust" src="~@Assets/mc/intel-illust.jpg"/>
         </div>
         <div class="col-12 col-md-5 left-side">
@@ -40,21 +40,26 @@
     </section>
     <section class="mc__container-lookout col no-gutters">
       <div class="row mc__container-intel__content align-items-center">
-        <div class="col-12 col-md-1">
+        <div class="col-12 col-md-6 hidden-md-up right-side-lookout">
+          <img class="illust" src="~@Assets/mc/lookout-illust.jpg"/>
         </div>
-        <div class="right-side col-12 col-md-5">
-          <div class="title">
-            Lookout
-          </div>
-          <div class="description">
-            Test and preview your links to drive more traffic, trust, and conversions to your website, product pages, and landing pages. Lookout maximizes your website visibility across social and messaging platforms.
-          </div>
-          <div class="more">
-            <router-link to="/lookout">See Lookout</router-link>
-            <img src="~@Assets/mc/arrow.svg"/>
+        <div class="col-12 col-md-6 left-side-lookout">
+          <div class="row">
+            <div class="col-12 col-md-9 offset-md-3 offset-0">
+              <div class="title">
+                Lookout
+              </div>
+              <div class="description">
+                Test and preview your links to drive more traffic, trust, and conversions to your website, product pages, and landing pages. Lookout maximizes your website visibility across social and messaging platforms.
+              </div>
+              <div class="more">
+                <router-link to="/lookout">See Lookout</router-link>
+                <img src="~@Assets/mc/arrow.svg"/>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col col-md-6">
+        <div class="col-12 col-md-6 hidden-xs-down right-side-lookout">
           <img class="illust" src="~@Assets/mc/lookout-illust.jpg"/>
         </div>
       </div>
