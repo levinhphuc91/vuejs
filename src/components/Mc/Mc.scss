@@ -80,7 +80,9 @@
     padding-bottom: 15rem;
     border-top: 1px solid $color-border-search;
     .left-side-lookout {
-      padding-right: 6rem;
+      .description{
+        max-width: 440px;
+      }
     }
     .right-side-lookout{
       padding: 0;
@@ -154,7 +156,7 @@
           margin-top: 30px;
         }
       }
-      .right-side-lookout, .left-side-lookout{
+      .right-side-lookout{
         padding: 0 15px;
       }
       .description{
