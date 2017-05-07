@@ -52,7 +52,17 @@
 </template>
 
 <script>
+import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
+
 export default {
   name: 'hire-us',
+  mounted() {
+    this.changeBGHeader();
+  },
+  methods: {
+    changeBGHeader() {
+      HEADER_EV.emit(CHANGE_PAGE, 'hire-us');
+    },
+  },
 };
 </script>

@@ -43,11 +43,43 @@
 }
 
 // MC page
-.header.mc-page {
+.header.mc-page, .header.intel, .header.hire-us {
   border-bottom: none;
   background-color: $background-mc;
   .header__menu {
     background-color: $background-mc;
+    .look-out {
+      opacity: 0;
+    }
+  }
+}
+// Intel page
+.header.intel {
+  .header__menu {
+    .look-out {
+      opacity: 1;
+      border-left-color: $color-coming-soon;
+    }
+  }
+}
+// Look out
+.header.lookout {
+  border-bottom: none;
+  background-color: $background-white;
+  .header__menu {
+    background-color: $background-white;
+    .look-out {
+      opacity: 1;
+    }
+  }
+}
+
+// Term
+.header.term {
+  border-bottom: 1px solid $color-border;
+  background-color: $background-white;
+  .header__menu {
+    background-color: $background-white;
     .look-out {
       opacity: 0;
     }

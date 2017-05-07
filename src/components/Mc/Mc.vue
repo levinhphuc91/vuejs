@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import { HEADER_EV, MC_PAGE } from '../../events/HeaderEvent';
+import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
 
 export default {
   name: 'mc-comp',
@@ -90,7 +90,7 @@ export default {
   },
   methods: {
     changeBGHeader() {
-      HEADER_EV.emit(MC_PAGE, true);
+      HEADER_EV.emit(CHANGE_PAGE, 'mc-page');
     },
   },
 };
