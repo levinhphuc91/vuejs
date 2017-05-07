@@ -40,7 +40,7 @@
 
 <script>
 import { Search } from '../Common';
-import { HEADER_EV, MC_PAGE } from '../../events/HeaderEvent';
+import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
 
 export default {
   name: 'lookout',
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     changeBGHeader() {
-      HEADER_EV.emit(MC_PAGE, false);
+      HEADER_EV.emit(CHANGE_PAGE, 'lookout');
     },
   },
 };
