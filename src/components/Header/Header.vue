@@ -15,7 +15,7 @@
             <el-menu-item index="3-3">item three</el-menu-item>
           </el-submenu>
           <el-menu-item index="4">About</el-menu-item>
-          <el-menu-item index="4">Hire us</el-menu-item>
+          <el-menu-item index="4"><router-link to="/hire-us">Hire us</router-link></el-menu-item>
           <el-menu-item index="4" class="contact-us">Contact us</el-menu-item>
         </div>
       </el-menu>

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import { Lookout, LookoutResult, Mc, Intel, Term } from '@Component';
+import { Lookout, LookoutResult, Mc, Intel, Term, HireUs } from '@Component';
 
 Vue.use(Router);
 
@@ -31,6 +31,11 @@ export default new Router({
       path: '/lookout-result',
       name: 'lookout-result',
       component: LookoutResult,
+    },
+    {
+      path: '/hire-us',
+      name: 'hire-us',
+      component: HireUs,
     },
   ],
 });
