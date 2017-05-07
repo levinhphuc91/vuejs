@@ -67,17 +67,23 @@
   }
   &__container-intel {
     padding-bottom: 7.5rem;
+    .right-side{
+      padding: 0;
+    }
     .left-side {
-      padding-left: 6rem;
-      padding-right: 6rem;
+      margin-left: 6rem;
+      max-width: 420px;
     }
   }
   &__container-lookout {
     padding-top: 7.5rem;
     padding-bottom: 15rem;
     border-top: 1px solid $color-border-search;
-    .right-side {
+    .left-side-lookout {
       padding-right: 6rem;
+    }
+    .right-side-lookout{
+      padding: 0;
     }
   }
   &__container-join-us {
@@ -114,13 +120,14 @@
         .title {
           font-size: 40px;
           line-height: 1.13;
-          padding: 0rem 7rem 2rem 7rem;
+          padding: 0;
         }
         .sub-title {
           font-size: 20px;
           line-height: 1.25;
           padding-left: 0rem;
           padding-right: 0rem;
+          margin-top: 20px;
           .hidden-md-up {
             padding-right: 0rem;
           }
@@ -134,11 +141,43 @@
       &__title {
         font-size: 30px;
         line-height: 1.17;
-        padding-top: 3rem;
+        margin-top: 3rem;
+      }
+      .right-side{
+        padding: 0 15px;
+      }
+      .left-side, .left-side-lookout {
+        margin: 0;
+        .title{
+          font-size: 20px;
+          line-height: 1.5;
+          margin-top: 30px;
+        }
+      }
+      .right-side-lookout, .left-side-lookout{
+        padding: 0 15px;
+      }
+      .description{
+        font-size: 16px;
+        line-height: 1.88;
+        margin: 17px 0;
       }
     }
     button {
       padding: 1.5rem 9rem;
+    }
+  }
+  &__container-join-us {
+    padding: 7rem 0rem;
+    .waiting {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    .victory {
+      font-size: 30px;
+      line-height: 1.17;
+      margin: 0 15px;
+      text-align: center;
     }
   }
 }
