@@ -16,8 +16,7 @@
 
     &__title {
       font-family: $font-ANB;
-      font-size: 5.6rem;
-      font-weight: bold;
+      font-size: 56px;
       text-align: center;
       width: 100%;
 
@@ -29,15 +28,13 @@
   }
 
   &__content {
+    padding: 100px 0;
     &__title {
       width: 100%;
       font-family: $font-ANB;
-      font-size: 4rem;
-      font-weight: bold;
+      font-size: 40px;
       text-align: center;
-      color: #343333;
-      margin-top: 10rem;
-      margin-bottom: 2.8rem;
+      color: $color-default;
 
       @include breakpoint(mobile) {
         font-size: 3rem;
@@ -48,24 +45,28 @@
 
     &__description {
       width: 100%;
-      margin-top: 0;
-      margin-bottom: 0;
       font-family: $font-ANR;
-      font-size: 2.7rem;
+      font-size: 27px;
       text-align: center;
-      color: #343333;
+      color: $color-default;
+      margin: 0 auto;
+      max-width: 950px;
 
       @include breakpoint(mobile) {
         font-size: 2rem;
         margin-bottom: 7rem;
       }
     }
+    .form{
+      margin-top: 70px;
+    }
 
     &__form {
-      margin: 7rem 9.7rem;
-      padding: 6rem 9.6rem;
+      padding: 60px 95px;
       border-radius: 3px;
-      border: solid 1px #eaeaea;
+      border: solid 1px $color-border;
+      max-width: 750px;
+      margin: 0 auto;
 
       @include breakpoint(mobile) {
         margin: 0;
@@ -73,22 +74,25 @@
         border: none;
       }
 
-
+      .form-group{
+        margin-bottom: 15px;
+      }
       &__label {
         font-family: $font-ANR;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 500;
-        color: #1f1e1e;
+        color: $color-search-input;
       }
 
       &__input {
         width: 100%;
         border-radius: 3px;
-        background-color: #ffffff;
-        border: solid 1px #eaeaea;
+        background-color: $background-white;
+        border: solid 1px $color-border;
         font-family: $font-ANR;
-        font-size: 1.8rem;
-        padding: 0.7rem;
+        font-size: 18px;
+        padding: 7px;
+        color: $color-coming-soon;
 
         &::placeholder {
           color: #bdbaba;
@@ -99,13 +103,16 @@
       &__textarea {
         height: 210px;
         border-radius: 3px;
-        background-color: #ffffff;
-        border: solid 1px #eaeaea;
-        padding: 0.7rem;
+        background-color: $background-white;
+        border: solid 1px $color-border;
+        font-family: $font-ANR;
+        font-size: 18px;
+        padding: 7px;
 
         &::placeholder {
-          color: #bdbaba;
-          font-size: 1.8rem;
+          font-family: $font-ANR;
+          font-size: 18px;
+          color: $color-coming-soon;
         }
       }
 
@@ -113,10 +120,10 @@
         border-radius: 3px;
         background-color: #ffffff;
         border: solid 1px #eaeaea;
-        height: 3.9rem !important;
-        padding: 0.7rem 1rem;
-        font-size: 1.8rem;
-        color: #bdbaba;
+        height: 39px!important;
+        padding: 7px;
+        font-size: 18px;
+        color: $color-coming-soon;
         font-family: $font-ANR;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -128,23 +135,23 @@
 
         option {
           font-size: 18px;
-          color: #bdbaba;
+          color: $color-coming-soon;
         }
       }
 
       &__button {
         button {
           border-radius: 5px;
-          background-color: #252936;
+          background-color: $background-black;
           width: 100%;
           font-family: $font-ANB;
-          font-size: 1.6rem;
+          font-size: 16px;
           font-weight: bold;
           letter-spacing: 2.1px;
           text-align: center;
-          color: #ffffff;
-          padding: 1.4rem;
-          margin: 2rem 0;
+          color: $background-white;
+          padding: 14px 0;
+          margin-top: 30px;
         }
       }
     }
