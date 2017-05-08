@@ -10,9 +10,8 @@
         <div class="hidden-sm-down col-5 row justify-content-end">
           <el-submenu index="3">
             <template slot="title">Products</template>
-            <el-menu-item index="3-1">item one</el-menu-item>
-            <el-menu-item index="3-2">item two</el-menu-item>
-            <el-menu-item index="3-3">item three</el-menu-item>
+            <el-menu-item index="3-1"><router-link to="/intel">Intel</router-link></el-menu-item>
+            <el-menu-item index="3-2"><router-link to="/lookout">Lookout</router-link></el-menu-item>
           </el-submenu>
           <el-menu-item index="4">About</el-menu-item>
           <el-menu-item index="4"><router-link to="/hire-us">Hire us</router-link></el-menu-item>

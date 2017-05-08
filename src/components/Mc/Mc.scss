@@ -40,6 +40,8 @@
       .title {
         font-size: 30px;
         font-weight: 600;
+        padding-bottom: 20px;
+        font-family: $font-AND;
       }
       .illust {
         width: 100%;
@@ -53,7 +55,7 @@
         font-weight: bold;
         color: $color-more;
         letter-spacing: 2px;
-        padding-top: 2rem;
+        padding-top: 20px;
         font-family: $font-ANB;
         text-transform: uppercase;
         a {
@@ -154,6 +156,7 @@
           font-size: 20px;
           line-height: 1.5;
           margin-top: 30px;
+          padding-bottom: 17px;
         }
       }
       .right-side-lookout{

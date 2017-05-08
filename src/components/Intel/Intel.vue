@@ -5,7 +5,7 @@
         <div class="col-12 content text-center">
           <p class="title">Special Intel for a Marketing World</p>
           <p class="sub-title">A monthly marketing magazine delivered to your inbox or slack team. Your only hope for success in the mobile future.</p>
-          <p><button>read now</button></p>
+          <p><router-link to="/intel-report"><button>read now</button></router-link></p>
         </div>
       </div>
     </section>
@@ -51,10 +51,10 @@
         </div>
       </div>
       <div class="row intel__container-intel__marketing align-items-center">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-5">
           <img class="illust" src="~@Assets/mc/intel-illust.jpg"/>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-6">
           <div class="title">
             Marketing warfare, made easy
           </div>

@@ -26,13 +26,13 @@
         </div>
         <div class="col-12 col-md-5 left-side">
           <div class="title">
-            Intelligence
+            Intel
           </div>
           <div class="description">
             Get monthly marketing magazine on your email inbox or slack team as a PDF. Intel is the only monthly briefing you’ll need to conquer your competition in a marketing world.
           </div>
           <div class="more">
-            <router-link to="/intel">See Intelligence</router-link>
+            <router-link to="/intel">See Intel</router-link>
             <img src="~@Assets/mc/arrow.svg"/>
           </div>
         </div>
