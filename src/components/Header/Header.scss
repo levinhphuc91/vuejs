@@ -35,6 +35,7 @@
     }
     .el-submenu__title, .el-menu-item {
       font-weight: 500 !important;
+      color: $color-default;
       &:hover {
         background-color: transparent !important;
       }
