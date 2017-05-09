@@ -6,4 +6,5 @@ export { default as Mc } from './Mc/Mc';
 export { default as Intel } from './Intel/Intel';
 export { default as Term } from './Term/Term';
 export { default as HireUs } from './HireUs/HireUs';
+export { default as ContactUs } from './ContactUs/ContactUs';
 export { default as IntelReport } from './IntelReport/IntelReport';

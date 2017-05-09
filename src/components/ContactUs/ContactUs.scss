@@ -1,0 +1,100 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+.contact-us{
+    &__section{
+        margin: 70px 0;
+        &__content{
+            max-width: 950px;
+            margin: 0 auto;
+            .title{
+                font-size: 56px;
+                font-family: $font-ANB;
+            }
+            .desc{
+                font-size: 30px;
+                font-family: $font-ANR;
+            }
+            &__email{
+                margin-top: 100px;
+                &__desc{
+                    max-width: 450px;
+                    margin: 0 auto;
+                    .contact{
+                        margin-bottom: 30px;
+                        .email{
+                            font-family: $font-ANR;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .email-desc{
+                            margin-top: 8px;
+                            font-family: $font-ANR;
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                    }
+                    .button-social{
+                        margin-top: 20px;
+                        img{
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+                &__address{
+                    .map{
+                        max-height: 260px;
+                        position: relative;
+                        overflow: hidden;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .address-content{
+                        margin-top: 10px;
+                        margin-bottom: 50px;
+                        .name{
+                            font-family: $font-ANR;
+                            font-size: 27px;
+                            font-weight: 600;
+                        }
+                        .address-desc{
+                            font-family: $font-ANR;
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &__section{
+            margin: 60px 0;
+            &__content{
+                .title{
+                    font-size: 40px;
+                    line-height: 45px;
+                }
+                .desc{
+                    font-size: 20px;
+                    line-height: 25px;
+                    margin-top: 20px;
+                }
+                &__email{
+                    margin-top: 60px;
+                    .contact{
+                        margin-bottom: 20px;
+                        .email{
+                            font-size: 18px;
+                        }
+                        .email-desc{
+                            margin-top: 5px;
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
