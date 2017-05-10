@@ -1,0 +1,74 @@
+@import './AboutUs.Item';
+
+.about-us {
+  &__header {
+    background-color: #e3d9d8;
+    &__title {
+      padding-top: 13.9rem;
+      font-family: $font-ANB;
+      font-size: 5.6rem;
+      font-weight: bold;
+      text-align: center;
+      color: #343333;
+    }
+
+    &__desc {
+      font-family: $font-ANR;
+      font-size: 27px;
+      text-align: center;
+      color: #343333;
+      padding: 2.7rem 2.1rem 18.9rem 2.1rem;
+    }
+  }
+
+  &__body {
+
+  }
+
+  &__footer {
+    background-color: #dc534d;
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      font-family: $font-ANR;
+      font-size: 30px;
+      line-height: 1;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 10rem;
+    }
+
+    &__desc {
+      font-family: $font-ANR;
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff;
+      padding: 3rem 0;
+    }
+
+    &__join {
+      width: 190px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: #252936;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2.1px;
+      text-align: center;
+      color: #ffffff;
+      padding: 1.4rem 0;
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__item {
+
+  }
+}
