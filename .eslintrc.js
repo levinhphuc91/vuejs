@@ -31,10 +31,12 @@ module.exports = {
     }],
     "linebreak-style": ["error", "windows"],
     "linebreak-style": ["error", "unix"],
+    "no-param-reassign": ["error", { "props": false }],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
     }],
+    "no-shadow": "off",
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
