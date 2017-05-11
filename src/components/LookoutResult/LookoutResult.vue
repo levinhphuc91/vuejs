@@ -1,17 +1,13 @@
 <template>
-  <div class="lookout">
-    <div class="container">
-      <div>
-        <search-comp />
-      </div>
-      <div class="lookout__result row justify-content-around" v-if="getLookoutResults.data">
-        <div v-for="data in getLookoutResults.data.relationships.lookoutResponses.data">
-          <span>{{data.platform}}</span>
-          <img :src="data.imageUrl"/>
-        </div>
-      </div>
+  <div class="container">
+    <div>
+      <search-comp />
     </div>
+    <div class="lookout__result row justify-content-around" v-if="getLookoutResults.data">
+      <result-comp class="col-10 col-md-6 lookout__result__screen" v-for="platform in getLookoutResults.data.relationships.lookoutResponses.data" :platform="platform">
+      </result-comp>
     </div>
+  </div>
 </template>
 
 <script>

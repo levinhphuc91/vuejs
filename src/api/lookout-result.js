@@ -8,7 +8,6 @@ export default {
       },
     })
       .then((response) => {
-        console.log(response.data);
         cb(response.data);
       })
       .catch((error) => {
@@ -22,7 +21,6 @@ export default {
       },
     })
       .then((response) => {
-        console.log(response.data);
         cb(response.data);
       })
       .catch((error) => {
