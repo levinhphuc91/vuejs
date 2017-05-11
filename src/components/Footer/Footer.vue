@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="footer__content__copy-right justify-content-center">
+          <div class="footer__content__copy-right mx-auto justify-content-center">
             © 2017 Mobile Cavalry. All rights reserved.
           </div>
         </div>
