@@ -36,6 +36,9 @@
     .el-submenu__title, .el-menu-item {
       font-weight: 500 !important;
       color: $color-default;
+      font-family: $font-ANR;
+      padding-left: 10px;
+      padding-right: 10px;
       &:hover {
         background-color: transparent !important;
       }
