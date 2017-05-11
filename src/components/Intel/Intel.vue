@@ -68,11 +68,11 @@
           <p class="title">Leaked: Upcoming Interviews and Espionage Missions</p>
         </div>
         <div class="logo row justify-content-center align-items-center">
-          <img src="~@Assets/intel/facebook-logo.jpg" class="col-4 col-md-2 fb"/>
-          <img src="~@Assets/intel/wechat-3.svg" class="col-4 col-md-2 we"/>
-          <img src="~@Assets/intel/1280-px-sound-cloud-logo.jpg" class="col-4 col-md-2 soundcloud"/>
-          <img src="~@Assets/intel/hootsuite-logo.jpg" class="col-4 col-md-2 hootsuite"/>
-          <img src="~@Assets/intel/unbounce-primary-logo-light-background.jpg"class="col-4 col-md-2 unbounce"/>
+          <img src="~@Assets/intel/intel-fb.png" class="col-4 col-md-2 fb"/>
+          <img src="~@Assets/intel/intel-wechat.png" class="col-4 col-md-2 we"/>
+          <img src="~@Assets/intel/intel-soundcloud.png" class="col-4 col-md-2 soundcloud"/>
+          <img src="~@Assets/intel/intel-hootsuite.png" class="col-4 col-md-2 hootsuite"/>
+          <img src="~@Assets/intel/intel-unbouncel.png"class="col-4 col-md-2 unbounce"/>
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@
       </div>
       <div class="row banner align-items-center col-12 col-md-10">
         <div class="col-sm-4">
-          <div class="banner-item">
+          <div class="banner-item hover-card">
             <div class="figure">
               <img src="~@Assets/intel/magz.jpg" width="100%"/>
             </div>
@@ -105,9 +105,10 @@
               <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-01 lighter"></div>
-              <div class="rectangle-grey-00"></div>
+              <div class="rectangle-grey-00 lighter"></div>
+              <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-02"></div>
-              <div class="rectangle-grey-02"></div>
+              <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-04"></div>
             </div>
           </div>
@@ -122,9 +123,10 @@
               <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-01 lighter"></div>
-              <div class="rectangle-grey-00"></div>
+              <div class="rectangle-grey-00 lighter"></div>
+              <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-02"></div>
-              <div class="rectangle-grey-02"></div>
+              <div class="rectangle-grey-03"></div>
               <div class="rectangle-grey-04"></div>
             </div>
           </div>

@@ -91,6 +91,8 @@
           }
           &.soundcloud {
             height: 45px;
+            padding-left: 6rem;
+            padding-right: 6rem;
           }
           &.hootsuite {
             height: 31px;
@@ -121,7 +123,7 @@
         min-height: 490px;
         margin: 20px 0px;
         border: 1px solid #dfdfdf;
-        transition: all 0.2s ease-in-out;
+        border-radius: 5px;
         .figure{
           margin: 0;
           position: relative;
@@ -136,12 +138,13 @@
           }
         }
         .content{
-          padding: 1rem;
+          padding: 2rem 2rem 1rem 2rem;
           position: relative;
           h3{
             font-family: $font-ANB;
             font-size: 20px;
             line-height: 1.25;
+            padding-bottom: 0.3rem;
           }
           .date{
             font-size: 12px;
@@ -150,9 +153,10 @@
           }
           .desc{
             font-size: 16px;
-            font-weight: 500;
+            font-weight: bolder;
             line-height: 1.44;
-            font-family: $font-ANM;
+            padding-bottom: 2.2rem;
+            font-family: $font-ANR;
           }
           .text-coming-soon {
             font-size: 20px;
@@ -163,16 +167,12 @@
             font-family: $font-ANB;
             text-transform: uppercase;
             position: absolute;
-            top: 30%;
+            top: 40%;
             width: 100%;
           }
           .lighter {
             opacity: 0.5;
           }
-        }
-        &:hover {
-          transform: translateY(-2%);
-          box-shadow: 0 8px 22px rgba(0,0,0,0.15);
         }
       }
     }
@@ -204,36 +204,47 @@
     padding: 1.5rem 6rem;
     border: none;
     color: $color-white;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      background-color: $background-button-hover;
+    }
   }
   .rectangle-grey-00 {
     height: 10px;
     width: 100%;
     background-color: $color-rectangle-grey;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
   }
   .rectangle-grey-01 {
     height: 10px;
     width: 95%;
     background-color: $color-rectangle-grey;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
   }
   .rectangle-grey-02 {
     height: 10px;
     width: 90%;
     background-color: $color-rectangle-grey;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
   }
   .rectangle-grey-03 {
     height: 10px;
     width: 80%;
     background-color: $color-rectangle-grey;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
   }
   .rectangle-grey-04 {
     height: 10px;
     width: 70%;
     background-color: $color-rectangle-grey;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
+  }
+  .hover-card {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-2%);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+    }
   }
   @include media-breakpoint-down(md) {
     &__container-header {
@@ -311,6 +322,8 @@
             }
             &.soundcloud {
               height: 38px;
+              padding-left: 10px;
+              padding-right: 10px;
             }
             &.hootsuite {
               height: 31px;
