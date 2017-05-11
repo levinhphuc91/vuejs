@@ -5,8 +5,6 @@
     padding: 6rem 0;
     background-color: $background-mc;
     .content{
-      margin: 0 auto;
-      max-width: 1000px;
       .title {
         font-size: 56px;
         font-weight: bold;
@@ -323,24 +321,25 @@
           }
         }
       }
-      &__container-report {
-        .title {
-          font-size: 20px;
-          line-height: 1.5;
-          text-align: center;
-          margin-top: 30px;
-        }
-        .banner {
-          margin-left: 0;
-          margin-right: 0;
+    }
+    &__container-report {
+      .title {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .banner {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+        .banner-item{
           margin-top: 1rem;
-          .banner-item{
-            margin-top: 1rem;
-            .figure{
-              height: 365px;
-              img{
-                min-height: 200px;
-              }
+          .figure{
+            height: 365px;
+            img{
+              min-height: 200px;
+              padding: 30px;
             }
           }
         }

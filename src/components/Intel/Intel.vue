@@ -1,11 +1,13 @@
 <template>
   <div class="intel">
     <section class="intel__container-header">
-      <div class="row justify-content-center">
-        <div class="col-12 content text-center">
-          <p class="title">Special Intel for a Marketing World</p>
-          <p class="sub-title">A monthly marketing magazine delivered to your inbox or slack team. Your only hope for success in the mobile future.</p>
-          <p><router-link to="/intel-report"><button>read now</button></router-link></p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 content text-center">
+            <p class="title">Special Intel for a Marketing World</p>
+            <p class="sub-title">A monthly marketing magazine delivered to your inbox or slack team. Your only hope for success in the mobile future.</p>
+            <p><router-link to="/intel-report"><button>read now</button></router-link></p>
+          </div>
         </div>
       </div>
     </section>
@@ -51,7 +53,7 @@
         </div>
       </div>
       <div class="row intel__container-intel__marketing align-items-center">
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-6">
           <img class="illust" src="~@Assets/mc/intel-illust.jpg"/>
         </div>
         <div class="col-12 col-md-6">
@@ -130,11 +132,13 @@
       </div>
     </section>
     <section class="intel__container-join-us">
-      <div class="row justify-content-center text-center">
-        <div class="col-12">
-          <p class="line-1 waiting">Let’s Go!</p>
-          <p class="line-2 victory">Challenge the field. Change the industry. Join us today</p>
-          <p> <button> read now</button></p>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-12">
+            <p class="line-1 waiting">Let’s Go!</p>
+            <p class="line-2 victory">Challenge the field. Change the industry. Join us today</p>
+            <p> <button> read now</button></p>
+          </div>
         </div>
       </div>
     </section>
