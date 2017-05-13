@@ -1,19 +1,21 @@
 <template>
   <div class="mc">
     <section class="mc__container-header">
-      <div class="row title justify-content-center col no-gutters">
-        Stop Being A Dumb Ass Marketer
-      </div>
-      <div class="sub-title row justify-content-center col no-gutters">
-        Bloody Brilliant <span class="hidden-md-up">Mobiles</span><span>Tools</span> & <span>Strategies</span> for Marketing Professionals
-      </div>
-      <div class="row justify-content-center">
-        <button>
-          Join us
-        </button>
-      </div>
-      <div class="row justify-content-center">
-        <img class="characters" src="~@Assets/mc/characters@2x.png"/>
+      <div class="container">
+        <div class="row title justify-content-center">
+          Stop Being A Dumb Ass Marketer
+        </div>
+        <div class="sub-title row justify-content-center">
+          Bloody Brilliant <span class="hidden-md-up">Mobiles</span><span>Tools</span> & <span>Strategies</span> for Marketing Professionals
+        </div>
+        <div class="row justify-content-center">
+          <button>
+            Join us
+          </button>
+        </div>
+        <div class="row justify-content-center">
+          <img class="characters" src="~@Assets/mc/characters@2x.png"/>
+        </div>
       </div>
     </section>
     <section class="mc__container-intel col no-gutters">
@@ -65,16 +67,18 @@
       </div>
     </section>
     <section class="mc__container-join-us">
-      <div class="row waiting justify-content-center">
-        What are you waiting for?
-      </div>
-      <div class="row victory justify-content-center">
-        Lead Your Marketing Team To Victory
-      </div>
-      <div class="row justify-content-center">
-        <button>
-          Join us
-        </button>
+      <div class="container">
+        <div class="row waiting justify-content-center">
+          What are you waiting for?
+        </div>
+        <div class="row victory justify-content-center">
+          Lead Your Marketing Team To Victory
+        </div>
+        <div class="row justify-content-center">
+          <button>
+            Join us
+          </button>
+        </div>
       </div>
     </section>
   </div>

@@ -5,8 +5,12 @@
     </div>
 
     <div class="hire-us__content container">
-      <p class="hire-us__content__title">Hire The Marketing Dream Team</p>
-      <p class="hire-us__content__description">No fluff. Just damn good results and positive return on investments. Write your details and learn how we can help lead your team to victory now. </p>
+      <div class="row">
+        <div class="col-12">
+          <p class="hire-us__content__title">Hire The Marketing Dream Team</p>
+          <p class="hire-us__content__description">No fluff. Just damn good results and positive return on investments. Write your details and learn how we can help lead your team to victory now. </p>
+        </div>
+      </div>
       <div class="row form">
         <div class="col-12">
           <div class="hire-us__content__form">

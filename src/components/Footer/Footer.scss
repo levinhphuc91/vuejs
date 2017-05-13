@@ -1,24 +1,23 @@
 @import '~bootstrap/scss/bootstrap-grid.scss';
 
 .footer {
-  padding: 7rem 0rem;
   text-transform: capitalize;
   background-color: $background-black;
   &__content {
-    display: flex;
-    .row {
-      flex-direction: column;
-      .header-column {
-        color: $color-white;
-        padding-bottom: 1.7rem;
-      }
-      p {
-        padding-bottom: 0.5rem;
-        color: $color-footer-list;
-      }
+    padding: 80px 0rem;
+    .left, .right{
+      margin-bottom: 25px;
+    }
+    .header-column {
+      color: $color-white;
+      padding-bottom: 16px;
+    }
+    p {
+      padding-bottom: 0.5rem;
+      color: $color-footer-list;
     }
     &__ship-by {
-      padding-top: 6rem;
+      margin-top: 60px;
       color: $color-footer-list;
       span {
         color: $color-white;
@@ -36,16 +35,23 @@
       text-align: center;
       padding-top: 3rem;
       border-top: 1px solid $color-border-copy-right;
-    }
-    .row.col-6.col-md-2 {
-      padding-bottom: 2rem;
+      width: 50%;
     }
   }
 
   @include media-breakpoint-down(md) {
     &__content {
+      padding: 50px 0rem;
+      .right{
+        margin-top: 50px;
+      }
+      &__ship-by {
+        margin-top: 30px;
+      }
       &__copy-right {
         font-size: 12px;
+        border: none;
+        width: 100%;
       }
     }
   }

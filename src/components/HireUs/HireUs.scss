@@ -7,23 +7,11 @@
     background-size: cover;
     background-color: #e3d9d8;
     height: 600px;
-
-    @include breakpoint(mobile) {
-      background-size: 180%;
-      background-position: -142px 218px;
-      height: 500px;
-    }
-
     &__title {
       font-family: $font-ANB;
       font-size: 56px;
       text-align: center;
       width: 100%;
-
-      @include breakpoint(mobile) {
-        font-size: 4rem;
-        margin-top: 5.8rem;
-      }
     }
   }
 
@@ -35,12 +23,6 @@
       font-size: 40px;
       text-align: center;
       color: $color-default;
-
-      @include breakpoint(mobile) {
-        font-size: 3rem;
-        font-family: $font-AND;
-        margin-top: 7rem;
-      }
     }
 
     &__description {
@@ -51,11 +33,6 @@
       color: $color-default;
       margin: 0 auto;
       max-width: 950px;
-
-      @include breakpoint(mobile) {
-        font-size: 2rem;
-        margin-bottom: 7rem;
-      }
     }
     .form{
       margin-top: 70px;
@@ -67,12 +44,6 @@
       border: solid 1px $color-border;
       max-width: 750px;
       margin: 0 auto;
-
-      @include breakpoint(mobile) {
-        margin: 0;
-        padding: 0;
-        border: none;
-      }
 
       .form-group{
         margin-bottom: 15px;
@@ -152,6 +123,54 @@
           color: $background-white;
           padding: 14px 0;
           margin-top: 30px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__header {
+      background: url($assets-path + '/hire-us/header-background-responsive.jpg');
+      height: 420px;
+      background-position: center;
+      width: 100%;
+      background-size: cover;
+      &__title {
+        font-size: 40px;
+        line-height: 1.13;
+        font-family: $font-ANB;
+      }
+    }
+    &__content {
+      padding: 0;
+      &__title {
+        margin-top: 70px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.17;
+        font-family: $font-ANR;
+      }
+      &__description {
+        font-size: 20px;
+        line-height: 1.25;
+        font-family: $font-ANR;
+        max-width: 290px;
+        margin: 0 auto;
+      }
+      .form{
+        margin-bottom: 70px;
+      }
+      &__form {
+        margin: 0 15px;
+        padding: 0;
+        border: none;
+        &__label {
+          font-size: 14px;
+        }
+        &__input, &__textarea, &__select {
+          font-size: 16px;
+        }
+        &__textarea {
+         height: 100px;
         }
       }
     }

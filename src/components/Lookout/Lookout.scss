@@ -8,6 +8,7 @@
     font-family: $font-ANB;
     color: $color-default;
     font-weight: bold;
+    padding: 0 10rem;
   }
   &__learn-more {
     font-size: 18px;
@@ -21,7 +22,7 @@
   &__benefits {
     font-size: 18px;
     line-height: 18px;
-    padding-bottom: 6rem;
+    padding: 0 10rem 6rem 10rem;
     .traffic, .user-experience, .time {
       line-height: 25px;
       text-align: left;
@@ -38,6 +39,7 @@
     }
   }
   &__platforms {
+    padding: 0 12rem;
     font-size: 18px;
     &__icon-lists {
       padding-top: 2rem;
@@ -50,10 +52,14 @@
 
   @include media-breakpoint-down(md) {
     padding: 8rem 1.5rem 4rem 1.5rem;
+    &__main-title {
+      padding: 0;
+    }
     &__learn-more, &__platforms {
       font-size: 16px;
     }
     &__benefits {
+      padding: 0 0 6rem 0;
       font-size: 16px;
       .traffic, .user-experience, .time {
         padding-left: 4rem;
@@ -61,6 +67,9 @@
           padding-left: 1.5rem;
         }
       }
+    }
+    &__platforms {
+      padding: 0;
     }
     &__main-title {
       font-size: 30px;

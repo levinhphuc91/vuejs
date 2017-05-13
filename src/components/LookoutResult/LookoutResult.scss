@@ -1,8 +1,11 @@
-.lookout {
+.lookout-result {
   background-color: $background-lookout;
-  &__result {
+  &__content {
     &__screen {
       padding: 4rem 0rem;
+    }
+    div:first-child, div:nth-child(2) {
+      padding-top: 0rem;
     }
   }
 }
