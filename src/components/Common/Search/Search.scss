@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap-grid.scss";
 
 .search {
-  margin: 6rem;
+  padding: 6rem;
   &__input {
     padding: 1rem 1rem 1rem 2rem;
     letter-spacing: 0.5px;
@@ -12,6 +12,9 @@
     font-family: $font-ANM;
     font-size: 18px;
     font-weight: 500;
+  }
+  &__input-error {
+    border-color: $color-error;
   }
   &__btn {
     font-size: 16px;
@@ -24,7 +27,16 @@
     font-family: $font-ANB;
     background-color: $background-black;
   }
-  @include media-breakpoint-down(md) {    
+  &__error {
+    font-size: 16px;
+    padding-top: 6px;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 0;
+    color: $color-error;
+    font-family: $font-ANM;
+  }
+  @include media-breakpoint-down(md) {
     margin: 6rem 0rem;
     &__btn {
       padding: 0rem 1rem;
