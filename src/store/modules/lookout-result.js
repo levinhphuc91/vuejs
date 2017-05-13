@@ -9,7 +9,18 @@ const state = {
       type: 'LookoutRequest',
       attributes: {
         targetUrl: '',
-        targetPlatforms: ['facebook', 'slack', 'wechat', 'whatsapp', 'line'],
+        targetPlatforms: [
+          'facebook',
+          'twitter',
+          'wechat',
+          'whatsapp',
+          'line',
+          'line_timeline',
+          'slack',
+          'skype',
+          'imessage',
+          'telegram',
+        ],
       },
     },
   },
@@ -22,6 +33,7 @@ const state = {
 const getters = {
   url: state => state.requestAllLookouts.data.attributes.targetUrl,
   getLookoutResults: state => state.getLookoutResults,
+  requestAllLookouts: state => state.requestAllLookouts,
   createdLookoutResults: state => state.createLookoutResults,
   checkoutStatus: state => state.checkoutStatus,
 };
@@ -47,6 +59,7 @@ const actions = {
       );
       if (!(state.getLookoutResults.data && state.getLookoutResults.data.attributes
         && state.getLookoutResults.data.attributes.status === 'finished')) {
+        console.log('request');
         setTimeout(request, 1000);
       }
     };

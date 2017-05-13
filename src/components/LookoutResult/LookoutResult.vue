@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="lookout-result">
+    <div class="container">
       <search-comp />
-    </div>
-    <div class="lookout__result row justify-content-around" v-if="getLookoutResults.data">
-      <result-comp class="col-10 col-md-6 lookout__result__screen" v-for="platform in getLookoutResults.data.relationships.lookoutResponses.data" :platform="platform">
-      </result-comp>
+      <div class="lookout-result__content row justify-content-around">
+        <result-comp class="col-10 col-md-6 lookout-result__content__screen" v-for="platform in requestAllLookouts.data.attributes.targetPlatforms" :platform="platform">
+        </result-comp>
+      </div>
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
     'result-comp': Result,
   },
   computed: mapGetters({
-    getLookoutResults: 'getLookoutResults',
+    requestAllLookouts: 'requestAllLookouts',
   }),
 };
 </script>
