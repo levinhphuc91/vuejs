@@ -16,11 +16,6 @@
         {{ item.desc }}
       </div>
     </div>
-
-    <div class="about-us__item__bottom">
-     <button class="about-us__item__bottom__prev">PREVIOUS</button>
-     <button class="about-us__item__bottom__next"></button>
-    </div>
     
   </div>
 </template>

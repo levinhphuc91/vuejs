@@ -5,13 +5,22 @@
 
   &__info {
     &__title {
-
+      font-family: $font-ANB;
+      font-size: 56px;
+      font-weight: bold;
+      color: #343333;
     }
 
     &__subTitle {
-      
+      font-family: $font-ANB;
+      font-size: 27px;
+      font-weight: bold;
+      font-style: italic;
+      color: #343333;
       span {
-
+        font-style: normal;
+        color: #afacac;
+        padding-right: 1rem;
       }
     }
 
@@ -26,7 +35,10 @@
     }
 
     &__content {
-
+      font-family: $font-ANR;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      color: #343333;
     }
   }
 
@@ -36,7 +48,7 @@
     }
 
     &__next {
-      
+
     }
   }
 }
