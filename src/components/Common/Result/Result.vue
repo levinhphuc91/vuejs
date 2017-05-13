@@ -1,14 +1,14 @@
 <template>
   <div class="result">
     <div class="result__header row align-items-center">
-      <img class="col-1 logo" :src="imgLogo(platform)"/>
+      <img class="col-1 logo" :src="imgLogo()"/>
       <span class="col-7">{{platform}}</span>
-      <button class="col-4"><img src="~@Assets/facebook/refresh.svg">Refresh</button>
+      <button v-on:click="refresh()" class="col-4"><img src="~@Assets/facebook/refresh.svg">Refresh</button>
     </div>
     <div class="result__content row">
-      <img v-if="isFinised()":src="imgDataResult(platform).imageUrl" width="315" height="546"/>
+      <img v-if="isFinised()":src="imgDataResult().imageUrl" width="315" height="546"/>
       <img v-if="!isFinised()"
-        :src="imgBlankResult(platform)" width="315" height="546"/>
+        :src="imgBlankResult()" width="315" height="546"/>
     </div>
     <div class="progress" v-if="!isFinised()">
         <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -24,23 +24,38 @@ export default {
   name: 'result-comp',
   props: ['platform'],
   computed: mapGetters({
+    refreshPlatforms: 'refreshPlatforms',
     getLookoutResults: 'getLookoutResults',
     createdLookoutResults: 'createdLookoutResults',
+    getLookoutResultsByPlatform: 'getLookoutResultsByPlatform',
   }),
   methods: {
-    imgLogo(platform) {
-      return req(`./${platform.toLowerCase()}.svg`);
+    imgLogo() {
+      return req(`./${this.platform.toLowerCase()}.svg`);
     },
-    imgBlankResult(platform) {
-      return req(`./blank-${platform.toLowerCase()}.png`);
+    imgBlankResult() {
+      return req(`./blank-${this.platform.toLowerCase()}.png`);
     },
     isFinised() {
+      if (this.refreshPlatforms.find(data => data === this.platform)) {
+        console.log(this.getLookoutResultsByPlatform[this.platform]);
+        return this.getLookoutResultsByPlatform[this.platform] &&
+         this.getLookoutResultsByPlatform[this.platform].getLookoutResults.data.attributes.status === 'finished';
+      }
+
       return this.getLookoutResults.data && this.getLookoutResults.data.attributes.status === 'finished';
     },
-    imgDataResult(platform) {
-      return this.getLookoutResults.data &&
-      this.getLookoutResults.data.relationships.lookoutResponses.data
-      .find(data => data.platform === platform);
+    imgDataResult() {
+      if (this.refreshPlatforms.find(data => data === this.platform)) {
+        return this.getLookoutResultsByPlatform[this.platform] &&
+          this.getLookoutResultsByPlatform[this.platform].getLookoutResults.data
+          .relationships.lookoutResponses.data[0];
+      }
+      return this.getLookoutResults.data && this.getLookoutResults.data.relationships
+          .lookoutResponses.data.find(data => data.platform === this.platform);
+    },
+    refresh() {
+      this.$store.dispatch('createdLookoutResults', this.platform);
     },
   },
 };

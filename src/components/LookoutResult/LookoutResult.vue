@@ -3,15 +3,15 @@
     <div class="container">
       <search-comp />
       <div class="lookout-result__content row justify-content-around">
-        <result-comp class="col-10 col-md-6 lookout-result__content__screen" v-for="platform in requestAllLookouts.data.attributes.targetPlatforms" :platform="platform">
+        <result-comp class="col-12 col-md-6 lookout-result__content__screen" v-for="platform in listPlatform" :platform="platform">
         </result-comp>
       </div>
+      <search-comp />
     </div>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
 import { Search, Result } from '../Common';
 
 export default {
@@ -20,8 +20,21 @@ export default {
     'search-comp': Search,
     'result-comp': Result,
   },
-  computed: mapGetters({
-    requestAllLookouts: 'requestAllLookouts',
-  }),
+  data() {
+    return {
+      listPlatform: [
+        'facebook',
+        'twitter',
+        'wechat',
+        'whatsapp',
+        'line',
+        'line_timeline',
+        'slack',
+        'skype',
+        'imessage',
+        'telegram',
+      ],
+    };
+  },
 };
 </script>
