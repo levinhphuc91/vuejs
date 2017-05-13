@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap-grid.scss";
 
 .search {
-  padding: 6rem;
+  padding: 6rem 20rem;
   &__input {
     padding: 1rem 1rem 1rem 2rem;
     letter-spacing: 0.5px;
@@ -37,7 +37,7 @@
     font-family: $font-ANM;
   }
   @include media-breakpoint-down(md) {
-    margin: 6rem 0rem;
+    padding: 6rem 1rem;
     &__btn {
       padding: 0rem 1rem;
     }
