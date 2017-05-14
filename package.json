@@ -17,6 +17,7 @@
     "bootstrap": "4.0.0-alpha.6",
     "element-ui": "^1.2.9",
     "jquery": "^3.2.1",
+    "moment": "^2.18.1",
     "tether": "^1.4.0",
     "vue": "^2.2.2",
     "vue-router": "^2.3.0",

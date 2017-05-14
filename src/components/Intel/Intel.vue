@@ -83,37 +83,20 @@
         </div>
       </div>
       <div class="row banner align-items-center col-12 col-md-10">
-        <div class="col-sm-4">
+        <div class="col-sm-4" v-for="data in getIntelReports.data">
           <div class="banner-item hover-card">
             <div class="figure">
-              <img src="~@Assets/intel/magz.jpg" width="100%"/>
+              <img :src="data.attributes.avatarUrl" width="100%"/>
+              <!-- <img src="~@Assets/intel/magz.jpg" width="100%"/> -->
             </div>
             <div class="content">
-              <h3>The Rise Of China</h3>
-              <p class="date text-uppercase">Janunary  2017 - Classified Briefing</p>
-              <p class="desc">China Country Feature: Top 10 Mobile Apps With Marketing Audits  + Actionable Twitter  Strategy for Positive Re-Activation</p>
+              <h3>{{data.attributes.title}}</h3>
+              <p class="date text-uppercase">{{formatDate(data.attributes.issuedAt)}} - {{data.attributes.status}}</p>
+              <p class="desc">{{data.attributes.caption}} + {{data.attributes.description}}</p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="banner-item coming-soon">
-            <div class="figure">
-              <img class="opacity" src="~@Assets/intel/magz.svg" />
-            </div>
-            <div class="content">
-              <div class="text-coming-soon">coming soon</div>
-              <div class="rectangle-grey-03"></div>
-              <div class="rectangle-grey-03"></div>
-              <div class="rectangle-grey-01 lighter"></div>
-              <div class="rectangle-grey-00 lighter"></div>
-              <div class="rectangle-grey-03"></div>
-              <div class="rectangle-grey-02"></div>
-              <div class="rectangle-grey-03"></div>
-              <div class="rectangle-grey-04"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" v-for="n in 3 - getIntelReports.data.length">
           <div class="banner-item coming-soon">
             <div class="figure">
               <img class="opacity" src="~@Assets/intel/magz.svg" />
@@ -148,16 +131,25 @@
 </template>
 
 <script>
+import moment from 'moment';
+import { mapGetters } from 'vuex';
 import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
 
 export default {
   name: 'mc-comp',
   mounted() {
     this.changeBGHeader();
+    this.$store.dispatch('getIntelResults');
   },
+  computed: mapGetters({
+    getIntelReports: 'getIntelReports',
+  }),
   methods: {
     changeBGHeader() {
       HEADER_EV.emit(CHANGE_PAGE, 'intel');
+    },
+    formatDate(value) {
+      return moment(String(value)).format('MMMM YYYY');
     },
   },
 };

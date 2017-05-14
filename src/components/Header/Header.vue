@@ -19,7 +19,7 @@
           <el-menu-item index="4"><router-link to="/hire-us">Hire us</router-link></el-menu-item>
           <el-menu-item index="4" class="contact-us"><router-link to="/contact-us">Contact us</router-link></el-menu-item>
         </div>
-        <div class="modal hidden-md-up" id="MobileCalvaryMenu" tabindex="-1" role="dialog" aria-labelledby="MobileCalvaryMenu" aria-hidden="true">
+        <div class="modal fade hidden-md-up" id="MobileCalvaryMenu" tabindex="-1" role="dialog" aria-labelledby="MobileCalvaryMenu" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
