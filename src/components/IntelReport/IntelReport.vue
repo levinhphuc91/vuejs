@@ -207,7 +207,17 @@
 </template>
 
 <script>
+import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
+
 export default {
   name: 'intel-report-comp',
+  mounted() {
+    this.changeBGHeader();
+  },
+  methods: {
+    changeBGHeader() {
+      HEADER_EV.emit(CHANGE_PAGE, 'intel-report-comp');
+    },
+  },
 };
 </script>
