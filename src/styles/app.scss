@@ -22,9 +22,9 @@ body {
 #mobileCavalry{
   position: relative;
   overflow: hidden;
-  padding-top: 6.1rem;
+  padding-top: 6rem;
 
   @include media-breakpoint-down(md) {
-    padding-top: 5.1rem;
+    padding-top: 5rem;
   }
 }

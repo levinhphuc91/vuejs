@@ -1,7 +1,6 @@
 .intel-report {
-  margin-top: 7.7rem;
-
   .breadcrumbs {
+    margin-top: 7.7rem;
     list-style-type: none;
     padding-left: .5rem;
 
@@ -212,7 +211,7 @@
       }
     }
   }
-
+  
   @include media-breakpoint-up(lg) {
     .container {
       width: 980px;
@@ -220,9 +219,8 @@
   }
 
   @include media-breakpoint-down(md) {
-    margin-top: 6rem;
-
     .breadcrumbs {
+      margin-top: 6rem;
       padding-left: 0;
     }
 

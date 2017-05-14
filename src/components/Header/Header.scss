@@ -108,7 +108,7 @@
   .header__menu {
     background-color: $background-mc;
     .look-out {
-      opacity: 0;
+      visibility: hidden;
     }
   }
 }
@@ -116,7 +116,7 @@
 .header.intel {
   .header__menu {
     .look-out {
-      opacity: 1;
+      visibility: visible;
       border-left-color: $color-coming-soon;
     }
   }
@@ -128,7 +128,19 @@
   .header__menu {
     background-color: $background-white;
     .look-out {
-      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+// Intel report comp
+.header.intel-report-comp {
+  border-bottom: 1px solid $color-border;
+  background-color: $background-white;
+  .header__menu {
+    background-color: $background-white;
+    .look-out {
+      visibility: hidden;
     }
   }
 }
@@ -140,7 +152,7 @@
   .header__menu {
     background-color: $background-white;
     .look-out {
-      opacity: 0;
+      visibility: hidden;
     }
   }
 }
@@ -152,7 +164,7 @@
   .header__menu {
     background-color: $background-mc;
     .look-out {
-      opacity: 0;
+      visibility: hidden;
     }
   }
 }
