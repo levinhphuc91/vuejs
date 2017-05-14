@@ -23,6 +23,56 @@
       text-transform: capitalize;
       padding-top: 0.8rem;
     }
+    .modal{
+      .modal-content{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        max-width: 85%;
+        border-radius: 5px;
+        border: none;
+        .modal-header{
+          border-bottom: none;
+          .logo{
+            max-width: 175px;
+          }
+          button{
+            img{
+              max-width: 18px;
+            }
+          }
+        }
+        .modal-body{
+          .nav{
+            .nav-item{
+              .dropdown-menu{
+                position: relative;
+                border: none;
+                border-left: 1px solid #ebebeb;
+                border-radius: 0;
+                padding: 0;
+                .dropdown-item{
+                  font-family: $font-ANR;
+                  font-size: 16px;
+                  color: $color-search-input;
+                  text-transform: initial;
+                }
+              }
+            }
+            .nav-link{
+              font-family: $font-ANR;
+              font-size: 16px;
+              color: $color-search-input;
+              margin: 15px 0;
+              font-weight: 500;
+              &:first-child{
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
     .logo {
       padding-right: 1rem;
     }
