@@ -32,6 +32,7 @@ module.exports = {
     "linebreak-style": ["error", "windows"],
     "linebreak-style": ["error", "unix"],
     "no-param-reassign": ["error", { "props": false }],
+    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
