@@ -96,3 +96,23 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+.b-layout {
+  &::after {
+    clear: both;
+    content: ' ';
+    display: block;
+  }
+
+  & > .layout-left {
+    float: left;
+  }
+
+  & > .layout-middle {
+    overflow: hidden;
+  }
+
+  & > .layout-right {
+    float: right;
+  }
+}
