@@ -15,10 +15,10 @@
 
       <section class="section magz-detail">
         <div class="row">
-          <div class="col-12 col-md-5">
-            <img class="magz-detail__img" src="~@Assets/intel/magz-detail.jpg">
+          <div class="col-12 col-md-5 magz-detail__img">
+            <img src="~@Assets/intel/magz-detail.jpg">
           </div>
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-md-7 magz-detail__content">
             <div class="magz-detail__info">
               <h3 class="magz-detail__info__title">
                 The Rise of China
@@ -134,7 +134,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section videos">
         <h3 class="section__title">
           Interview Videos
         </h3>

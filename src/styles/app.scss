@@ -18,3 +18,13 @@ body {
 .app-container {
   min-height: calc(100vh - 40rem);
 }
+
+#mobileCavalry{
+  position: relative;
+  overflow: hidden;
+  padding-top: 6.1rem;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 5.1rem;
+  }
+}
