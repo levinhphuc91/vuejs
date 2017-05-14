@@ -5,7 +5,7 @@
     background: url($assets-path + '/mc/header-background.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 4rem;
+    padding-top: 120px;
     background-size: cover;
     background-color: $background-mc;
     .title {
@@ -121,6 +121,7 @@
 
   @include media-breakpoint-down(md) {
       &__container-header {
+        padding-top: 100px;
         .title {
           font-size: 40px;
           line-height: 1.13;

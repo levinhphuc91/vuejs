@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap-grid.scss";
 
 .home {
-  padding: 8rem 12rem 4rem 12rem;
+  padding: 140px 0 90px;
   text-align: center;
   &__main-title {
     font-size: 56px;
@@ -51,7 +51,7 @@
   }
 
   @include media-breakpoint-down(md) {
-    padding: 8rem 1.5rem 4rem 1.5rem;
+    padding: 110px 0 70px;
     &__main-title {
       padding: 0;
     }
