@@ -21,6 +21,10 @@ $color-footer-list: #6d758c;
 $color-white: #ffffff;
 $color-muted: #828282;
 $color-border-copy-right: #393e4e;
+$color-media-time: #6d6868;
+$color-media-progress: #3cb1ed;
+$color-white-opacity78: rgba(255, 255, 255, 0.78);
+$color-video-time: #8e8d8d;
 $lookout-shadow-result: 0 9px 10px 0 rgba(226, 226, 226, 0.5);
 
 $assets-path: './assets';
@@ -33,8 +37,3 @@ $font-ANB: 'AvenirNextBold';
 $font-ANB-CN: 'AvenirNextBoldCn';
 $font-ANCN: 'AvenirNextCn';
 $font-VYGM: 'VoyagerMedium';
-
-#mobileCavalry{
-    position: relative;
-    overflow: hidden;
-}
