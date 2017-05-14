@@ -13,7 +13,7 @@
             <el-menu-item index="3-1"><router-link to="/intel">Intel</router-link></el-menu-item>
             <el-menu-item index="3-2"><router-link to="/lookout">Lookout</router-link></el-menu-item>
           </el-submenu>
-          <el-menu-item index="4">About</el-menu-item>
+          <el-menu-item index="4"><router-link to="/about">About</router-link></el-menu-item>
           <el-menu-item index="4"><router-link to="/hire-us">Hire us</router-link></el-menu-item>
           <el-menu-item index="4" class="contact-us"><router-link to="/contact-us">Contact us</router-link></el-menu-item>
         </div>
