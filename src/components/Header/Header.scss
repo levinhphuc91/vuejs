@@ -90,6 +90,18 @@
   }
 }
 
+// aboutUs
+.header.about-us {
+  border-bottom: none;
+  background-color: $background-mc;
+  .header__menu {
+    background-color: $background-mc;
+    .look-out {
+      opacity: 0;
+    }
+  }
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
   .header {

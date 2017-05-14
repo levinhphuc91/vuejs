@@ -1,0 +1,130 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.about-us__item {
+  &__person {
+    padding: 7rem 30rem 4rem 30rem;
+    .col-2 {
+      text-align: center;
+    }
+    img {
+      height: 87px;
+    }
+  }
+
+  &__info {
+    background: url($assets-path + '/about/splatter.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 60px;
+    background-size: 60%;
+    &__profile {
+      max-height: 570px;
+      text-align: center;
+      img {
+        height: 100%;
+      }
+      &.lady {
+        margin-top: 4rem;
+      }
+      &.leader {
+        margin-top: 2rem;
+      }
+      &.hacker {
+      }
+      &.lala {
+        img {
+          margin-top: 4rem;
+        }
+      }
+      &.sumo {
+        img {
+          height: 75%;
+          margin-top: 15rem;
+          margin-left: -1rem;
+        }
+      }
+    }
+    &__content {
+      padding-right: 4rem;
+    }
+    &__title {
+      font-family: $font-ANB;
+      font-size: 56px;
+      font-weight: bold;
+      color: #343333;
+    }
+
+    &__subTitle {
+      font-family: $font-ANB;
+      font-size: 27px;
+      margin-top: -2rem;
+      font-weight: bold;
+      font-style: italic;
+      color: #343333;
+      span {
+        font-style: normal;
+        color: #afacac;
+        padding-right: 1rem;
+      }
+    }
+
+    &__social {
+      padding-bottom: 2rem;
+      img {
+        padding-right: 10px;
+      }
+    }
+
+    &__content {
+      font-family: $font-ANR;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      .desc2 {
+        padding-top: 20px;
+      }
+      .previous, .next {
+        font-family: $font-ANB;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: $color-more;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding-top: 30px;
+        img {
+          padding-bottom: 3px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__person {
+      img {
+        height: 65px;
+      }
+    }
+    &__info {
+      background: url($assets-path + '/about/splatter-responsive.jpg');
+      background-repeat: no-repeat;
+      background-position-x: 0px;
+      background-position-y: 0px;
+      background-size: 127%;
+      &__profile {
+        height: 380px;
+        max-height: 380px;
+      }
+      &__title {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      &__subTitle {
+        font-size: 20px;
+      }
+      &__content {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

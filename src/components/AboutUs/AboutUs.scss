@@ -1,0 +1,107 @@
+@import "./AboutUs.item";
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.about-us {
+  &__header {
+    background-color: #e3d9d8;
+    &__title {
+      padding-top: 13.9rem;
+      font-family: $font-ANB;
+      font-size: 5.6rem;
+      font-weight: bold;
+      text-align: center;
+      color: #343333;
+    }
+
+    &__desc {
+      font-family: $font-ANR;
+      font-size: 27px;
+      text-align: center;
+      color: #343333;
+      padding: 1.5rem 6rem 14rem 6rem;
+    }
+  }
+
+  &__body {
+
+  }
+
+  &__footer {
+    background-color: #dc534d;
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      font-family: $font-ANR;
+      font-size: 30px;
+      line-height: 1;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 10rem;
+    }
+
+    &__desc {
+      font-family: $font-ANR;
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff;
+      padding: 3rem 0;
+    }
+
+    &__join {
+      width: 190px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: #252936;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2.1px;
+      text-align: center;
+      color: #ffffff;
+      padding: 1.4rem 0;
+      margin-bottom: 10rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    padding-bottom: 10rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    &__header {
+      &__title {
+        font-size: 40px;
+        padding-top: 12rem;
+        line-height: 1.13;
+        font-weight: bold;
+      }
+      &__desc {
+        font-size: 20px;
+        line-height: 1.25;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+    &__footer {
+      &__title {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      &__desc {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.17;
+      }
+    }
+    &__item {
+      padding-bottom: 8rem;
+    }
+  }
+}
