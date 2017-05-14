@@ -1,4 +1,5 @@
-@import './AboutUs.Item';
+@import "./AboutUs.item";
+@import "~bootstrap/scss/bootstrap-grid.scss";
 
 .about-us {
   &__header {
@@ -17,7 +18,7 @@
       font-size: 27px;
       text-align: center;
       color: #343333;
-      padding: 2.7rem 2.1rem 18.9rem 2.1rem;
+      padding: 1.5rem 6rem 14rem 6rem;
     }
   }
 
@@ -65,10 +66,42 @@
       color: #ffffff;
       padding: 1.4rem 0;
       margin-bottom: 10rem;
+      text-transform: uppercase;
     }
   }
 
   &__item {
+    padding-bottom: 10rem;
+  }
 
+  @include media-breakpoint-down(md) {
+    &__header {
+      &__title {
+        font-size: 40px;
+        padding-top: 12rem;
+        line-height: 1.13;
+        font-weight: bold;
+      }
+      &__desc {
+        font-size: 20px;
+        line-height: 1.25;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+    &__footer {
+      &__title {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      &__desc {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.17;
+      }
+    }
+    &__item {
+      padding-bottom: 8rem;
+    }
   }
 }

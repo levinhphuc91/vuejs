@@ -1,5 +1,5 @@
 <template>
-  <div class="about-us"> 
+  <div class="about-us">
     <div class="about-us__header">
       <div class="container">
         <p class="about-us__header__title">Who Will Lead You to Victory</p>
@@ -9,10 +9,6 @@
     <div class="container">
       <div class="about-us__body">
         <about-us-item :item="selected" />
-        <div class="about-us__item__bottom">
-          <button class="about-us__item__bottom__prev" v-on:click="onPrev()" :disabled="selectedIdx < 1 ? true : false">PREVIOUS</button>
-          <button class="about-us__item__bottom__next" v-on:click="onNext()" :disabled="selectedIdx === lists.length - 1 ? true : false">NEXT</button>
-        </div>
       </div>
     </div>
 
@@ -27,9 +23,10 @@
 </template>
 
 <script>
-import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
-
+import DataProfile from './DataProfile';
 import AboutUsItem from './AboutUs.Item';
+import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
+import { INTEL_EV, CHANGE_PROFILE } from '../../events/IntelEvent';
 
 export default {
   name: 'about-us',
@@ -37,39 +34,26 @@ export default {
     'about-us-item': AboutUsItem,
   },
   mounted() {
-    this.changeBGHeader();
     this.selectedIdx = 0;
     this.selected = this.lists[this.selectedIdx];
-    console.log(this.selected);
-  },
-  methods: {
-    changeBGHeader() {
-      HEADER_EV.emit(CHANGE_PAGE, 'about-us');
-    },
-    onSelect(x) {
-      console.log(x);
-    },
-    onNext() {
-      this.selectedIdx = this.selectedIdx + 1;
-      this.selected = this.lists[this.selectedIdx];
-    },
-    onPrev() {
-      this.selectedIdx = this.selectedIdx - 1;
-      this.selected = this.lists[this.selectedIdx];
-    },
   },
   data() {
     return {
       selectedIdx: null,
       selected: null,
-      lists: [
-        { id: 'lady', name: 'Lady', aka: 'Notorious Notable', desc: 'Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. <br /> They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun.' },
-        { id: 'sumo', name: 'Sumo', aka: 'Notorious Notable', desc: 'Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. <br /> They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun.' },
-        { id: 'leader', name: 'Leader', aka: 'Notorious Notable', desc: 'Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. <br /> They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun.' },
-        { id: 'lala', name: 'lala', aka: 'Notorious Notable', desc: 'Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. <br /> They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun.' },
-        { id: 'hacker', name: 'Hacker', aka: 'Notorious Notable', desc: 'Epic cheeseburgers come in all kinds of manifestations, but we want them in and around our mouth no matter what. Slide those smashed patties with the gently caramelized meat fat between a toasted brioche bun and pass it over. You fall in love with the cheeseburger itself but the journey ain’t half bad either. <br /> They’re the childhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. Whether it’s dressed up or informal, cheeseburgers have your back. Sometimes we lose sight of what really matters in life. There’s something to be said for a gourmet brie and truffle burger paired with parmesan frites, but don’t let that make you forget about the ol’ faithful with American cheddar and a squishy bun.' },
-      ],
+      lists: DataProfile,
     };
+  },
+  created() {
+    INTEL_EV.on(CHANGE_PROFILE, (index) => {
+      this.selectedIdx = index;
+      this.selected = this.lists[this.selectedIdx];
+    });
+  },
+  methods: {
+    changeBGHeader() {
+      HEADER_EV.emit(CHANGE_PAGE, 'about-us');
+    },
   },
 };
 </script>
