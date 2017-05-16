@@ -8,6 +8,14 @@
     }
     img {
       height: 87px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-2%);
+        box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+        border-radius: 7px;
+      }
     }
   }
 
@@ -90,6 +98,8 @@
         font-weight: bold;
         letter-spacing: 2px;
         padding-top: 30px;
+        cursor: pointer;
+        user-select: none;
         img {
           padding-bottom: 3px;
         }

@@ -9,7 +9,7 @@
         <a class="btn hidden-md-up" href="#" data-toggle="modal" data-target="#MobileCalvaryMenu" data-backdrop="false">
           <img src="../../assets/burger-menu.svg">
         </a>
-        <div class="hidden-xs-down ml-auto col-6 row justify-content-end">
+        <div class="hidden-xs-down col-md-9 col-6 row justify-content-end">
           <el-submenu index="3">
             <template slot="title">Products</template>
             <el-menu-item index="3-1"><router-link to="/intel">Intel</router-link></el-menu-item>
