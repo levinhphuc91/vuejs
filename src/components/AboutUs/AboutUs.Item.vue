@@ -50,11 +50,11 @@
         <div class="about-us__item__info__content row justify-content-between no-gutters">
           <p class="desc1">{{ item.desc1 }}</p>
           <p class="desc2">{{ item.desc2 }}</p>
-          <div class="previous">
+          <div class="previous" v-on:click="prevProfile()">
             <img src="../../assets/about/previous-icon.svg">
             Previous
           </div>
-          <div class="next">
+          <div class="next" v-on:click="nextProfile()">
             Next
             <img src="../../assets/about/next-icon.svg">
           </div>
@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import { INTEL_EV, CHANGE_PROFILE } from '../../events/IntelEvent';
+import { INTEL_EV, CHANGE_PROFILE, NEXT_PROFILE, PREV_PROFILE } from '../../events/IntelEvent';
 
 const req = require.context('../../assets/about', true, /^\.\/.*\.png$/);
 export default {
@@ -86,6 +86,12 @@ export default {
     },
     selectProfile(index) {
       INTEL_EV.emit(CHANGE_PROFILE, index);
+    },
+    nextProfile() {
+      INTEL_EV.emit(NEXT_PROFILE);
+    },
+    prevProfile() {
+      INTEL_EV.emit(PREV_PROFILE);
     },
   },
 };

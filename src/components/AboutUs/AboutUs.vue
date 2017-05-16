@@ -26,7 +26,7 @@
 import DataProfile from './DataProfile';
 import AboutUsItem from './AboutUs.Item';
 import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
-import { INTEL_EV, CHANGE_PROFILE } from '../../events/IntelEvent';
+import { INTEL_EV, CHANGE_PROFILE, NEXT_PROFILE, PREV_PROFILE } from '../../events/IntelEvent';
 
 export default {
   name: 'about-us',
@@ -45,8 +45,29 @@ export default {
     };
   },
   created() {
+    const maxIdxCharacter = this.lists.length - 1;
+    const minIdxCharacter = 0;
+
     INTEL_EV.on(CHANGE_PROFILE, (index) => {
       this.selectedIdx = index;
+      this.selected = this.lists[this.selectedIdx];
+    });
+
+    INTEL_EV.on(NEXT_PROFILE, () => {
+      if (parseInt(this.selectedIdx, 0) >= maxIdxCharacter) {
+        this.selectedIdx = 0;
+      } else {
+        this.selectedIdx = this.selectedIdx + 1;
+      }
+      this.selected = this.lists[this.selectedIdx];
+    });
+
+    INTEL_EV.on(PREV_PROFILE, () => {
+      if (parseInt(this.selectedIdx, 0) <= minIdxCharacter) {
+        this.selectedIdx = maxIdxCharacter;
+      } else {
+        this.selectedIdx = this.selectedIdx - 1;
+      }
       this.selected = this.lists[this.selectedIdx];
     });
   },

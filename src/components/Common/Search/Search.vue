@@ -1,6 +1,6 @@
 <template>
   <div class="search row">
-    <input class="search__input col-9 col-md-10" v-bind:class="{ 'search__input-error': isError }" placeholder="Your link here" :value="url" @input="updateUrl">
+    <input class="search__input col-9 col-md-10 form-control" v-bind:class="{ 'search__input-error': isError }" placeholder="Your link here" :value="url" @input="updateUrl">
     <button class="search__btn col-3 col-md-2" v-on:click="createdLookoutResults">Test</button>
     <div class="search__error col-9 col-md-10" v-if="isError">Website address is incorrect!</div>
   </div>
