@@ -13,6 +13,7 @@
 
 <script>
 import { Search, Result } from '../Common';
+import { HEADER_EV, CHANGE_PAGE } from '../../events/HeaderEvent';
 
 export default {
   name: 'lookout-result',
@@ -35,6 +36,14 @@ export default {
         'telegram',
       ],
     };
+  },
+  mounted() {
+    this.changeBGHeader();
+  },
+  methods: {
+    changeBGHeader() {
+      HEADER_EV.emit(CHANGE_PAGE, 'lookout');
+    },
   },
 };
 </script>
