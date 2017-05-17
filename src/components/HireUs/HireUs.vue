@@ -21,7 +21,7 @@
               </div>
               <div class="form-group col-md-6">
                 <label class="hire-us__content__form__label" for="formPhone">Phone</label>
-                <input type="text" class="form-control hire-us__content__form__input" id="formPhone" placeholder="your phone number">
+                <input type="text" class="form-control hire-us__content__form__input" id="formPhone" placeholder="Your phone number">
               </div>
 
               <div class="form-group col-md-6">
