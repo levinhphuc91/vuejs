@@ -38,12 +38,21 @@ export default {
     },
     isFinised() {
       if (this.refreshPlatforms.find(data => data === this.platform)) {
-        console.log(this.getLookoutResultsByPlatform[this.platform]);
-        return this.getLookoutResultsByPlatform[this.platform] &&
-         this.getLookoutResultsByPlatform[this.platform].getLookoutResults.data.attributes.status === 'finished';
+        if (this.getLookoutResultsByPlatform[this.platform] &&
+         this.getLookoutResultsByPlatform[this.platform].getLookoutResults.data.relationships
+         .lookoutResponses.data.find(data =>
+           data && data.platform === this.platform && data.imageUrl && data.imageUrl.length > 0)) {
+          return true;
+        }
+        return false;
       }
 
-      return this.getLookoutResults.data && this.getLookoutResults.data.attributes.status === 'finished';
+      if (this.getLookoutResults.data && this.getLookoutResults.data.relationships
+          .lookoutResponses.data.find(data =>
+            data.platform === this.platform && data.imageUrl && data.imageUrl.length > 0)) {
+        return true;
+      }
+      return false;
     },
     imgDataResult() {
       if (this.refreshPlatforms.find(data => data === this.platform)) {
